@@ -7,6 +7,7 @@ import 'package:shop_aholic/pages/home.dart';
 
 void main() {
   runApp(MaterialApp(
+    // debugShowCheckedModeBanner: false,
     title: 'ShopAholic',
     theme: ThemeData(
       colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),

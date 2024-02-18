@@ -1,15 +1,13 @@
+import "package:shop_aholic/models/known_item.dart";
+
 class ShopItem {
-  String name;
+  int qty;
+  KnownItem item;
+  bool done;
 
-  ShopItem({required this.name});
+  ShopItem({required this.item, this.qty = 1, this.done = false });
 
-  static List<ShopItem> getItems() {
-    List<ShopItem> items = [];
-
-    for( int i=0; i<10; i++ ) {
-      items.add(ShopItem(name: 'Articolo $i'));
-    }
-
-    return items;
+  static Future<List<ShopItem>> readItems()  async {
+    return [];
   }
 }

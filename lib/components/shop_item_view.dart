@@ -13,7 +13,7 @@ class ShopItemViewer extends StatelessWidget {
       padding: const EdgeInsets.all(10),
       child: Row(
         children: [
-          Text(item.name),
+          Text(item.item.name),
           ElevatedButton(
             onPressed: () => onRemoved(),
             child: const Icon(Icons.delete)
