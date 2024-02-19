@@ -3,6 +3,8 @@ import 'package:shop_aholic/components/shop_item_view.dart';
 import 'package:shop_aholic/models/known_item.dart';
 import 'package:shop_aholic/models/shop_item.dart';
 import 'package:shop_aholic/models/shop_list.dart';
+import 'package:shop_aholic/pages/do_shopping.dart';
+
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
@@ -50,6 +52,20 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
+        actions: [
+          ElevatedButton.icon(
+            onPressed: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => DoShoppingPage(list: ShopList.current!)
+                )
+              )
+            },
+            icon: const Icon(Icons.play_arrow),
+            label: const Text('go')
+            )
+          ]
       ),
 
       body: FutureBuilder(

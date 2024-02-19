@@ -12,7 +12,7 @@ class ChooseItemPage extends StatefulWidget {
 
 class _ChooseItemPageState extends State<ChooseItemPage> {
 
-	List<ShopItem> _items = [];
+	final List<ShopItem> _items = [];
 
 	void _addItem() {
 		setState(() {

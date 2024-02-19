@@ -37,7 +37,8 @@ class ShopList {
   static Future<ShopList> read() async {
     current ??= ShopList();
     
+    return Future.value(current);
     // TODO: async read from db
-    return Future.delayed(const Duration(seconds: 3), () => Future.value(current));
+    // return Future.delayed(const Duration(seconds: 3), () => Future.value(current));
   }
 }
