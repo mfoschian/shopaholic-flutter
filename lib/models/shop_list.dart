@@ -1,5 +1,6 @@
 import 'dart:async';
 
+// import 'package:shop_aholic/db/database.dart';
 import 'package:shop_aholic/models/shop_item.dart';
 
 class ShopList {
@@ -34,11 +35,9 @@ class ShopList {
 
   static ShopList? current;
 
+  ShopList(List<ShopItem> l) : items = l;
   static Future<ShopList> read() async {
-    current ??= ShopList();
-    
-    return Future.value(current);
-    // TODO: async read from db
-    // return Future.delayed(const Duration(seconds: 3), () => Future.value(current));
+    current = ShopList(await ShopItem.readItems());
+    return current!;
   }
 }

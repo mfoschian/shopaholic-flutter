@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:shop_aholic/db/database.dart';
 import 'package:shop_aholic/pages/home.dart';
 
 // void main() {
 //   runApp(const MyApp());
 // }
 
-void main() {
+void main() async {
+
+  await DB.init();
+  
+
   runApp(MaterialApp(
     // debugShowCheckedModeBanner: false,
     title: 'ShopAholic',

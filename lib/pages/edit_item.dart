@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:shop_aholic/models/known_item.dart';
+import 'package:shop_aholic/models/product.dart';
 
 class EditItemPage extends StatelessWidget {
   const EditItemPage({required this.item, super.key});
 
-  final KnownItem item;
+  final Product item;
   final String title = 'Modifica';
 
   @override

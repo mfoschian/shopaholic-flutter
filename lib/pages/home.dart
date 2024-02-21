@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shop_aholic/components/shop_item_view.dart';
-import 'package:shop_aholic/models/known_item.dart';
+import 'package:shop_aholic/models/product.dart';
 import 'package:shop_aholic/models/shop_item.dart';
 import 'package:shop_aholic/models/shop_list.dart';
 import 'package:shop_aholic/pages/do_shopping.dart';
@@ -16,7 +16,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  // void _addItem(KnownItem ki) {
+  // void _addItem(Product ki) {
   void _addItem() {
     ShopList? items = ShopList.current;
     if (items == null) {
@@ -24,7 +24,7 @@ class _MyHomePageState extends State<MyHomePage> {
     }
 
     setState(() {
-      KnownItem ki = KnownItem(id: '100', name: 'pippo');
+      Product ki = Product(id: '100', name: 'pippo');
       items.add(ShopItem(item: ki, qty: 1, done: false));
     });
   }
