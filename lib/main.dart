@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shop_aholic/db/database.dart';
+import 'package:shop_aholic/app.dart';
 import 'package:shop_aholic/pages/home.dart';
 
 // void main() {
@@ -8,9 +8,9 @@ import 'package:shop_aholic/pages/home.dart';
 
 void main() async {
 
-  await DB.init();
+  WidgetsFlutterBinding.ensureInitialized();
+  await App.db.connect();
   
-
   runApp(MaterialApp(
     // debugShowCheckedModeBanner: false,
     title: 'ShopAholic',
@@ -26,15 +26,3 @@ void main() async {
     },
   ));
 }
-
-// class MyApp extends StatelessWidget {
-//   const MyApp({super.key});
-
-//   // This widget is the root of your application.
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       home: const MyHomePage(),
-//     );
-//   }
-// }

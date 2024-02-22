@@ -1,30 +1,43 @@
-import "package:shop_aholic/db/database.dart";
+import "package:shop_aholic/app.dart";
 import "package:shop_aholic/models/product.dart";
 
 class ShopItem {
+  String sid;
   int qty;
   Product item;
   bool done;
 
-  ShopItem({required this.item, this.qty = 1, this.done = false });
-
-  static const String _tb = 'shopitems';
+  ShopItem({this.sid = '', required this.item, this.qty = 1, this.done = false });
 
   static Future<List<ShopItem>> readItems()  async {
-    List<Map<String,Object?>> rows = await DB.me().query(_tb);
+
+    const sql = """SELECT s.sid AS sid, s.qty AS qty, s.status AS status,
+      p.id AS product_id, p.name AS name, p.description AS description
+    FROM
+      shopitems s, products p
+    WHERE
+      s.product_id = p.id
+    """;
+
+
+    List<Map<String,Object?>> rows = await App.db.queryRaw(sql);
     return [
       for (final {
-            'sid': sid as int,
-            'product_id': product_id as int,
+            'sid': sid as String,
             'qty': qty as int,
             'status': status as int,
+            'product_id': pid as String,
+            'name': pname as String,
+            'description': pdesc as String
           } in rows)
         ShopItem(
+          sid: sid,
           qty:qty,
           done: status == 1,
           item: Product(
-            id: 'p-$product_id',
-            name: 'Prodotto $product_id'
+            id: pid,
+            name: pname,
+            description: pdesc
           )
         )
     ];
