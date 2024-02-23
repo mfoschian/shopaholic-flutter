@@ -9,6 +9,16 @@ class ShopItem {
 
   ShopItem({this.sid = '', required this.item, this.qty = 1, this.done = false });
 
+  Future<bool> save() async {
+    int inserted = await App.db.insert('shopitems', {
+      'sid': sid,
+      'qty': qty,
+      'status': done ? 1 : 0,
+      'product_id': item.id,
+    });
+    return inserted == 1;
+  }
+
   static Future<List<ShopItem>> readItems()  async {
 
     const sql = """SELECT s.sid AS sid, s.qty AS qty, s.status AS status,

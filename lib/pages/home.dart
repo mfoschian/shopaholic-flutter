@@ -3,6 +3,7 @@ import 'package:shop_aholic/components/shop_item_view.dart';
 import 'package:shop_aholic/models/product.dart';
 import 'package:shop_aholic/models/shop_item.dart';
 import 'package:shop_aholic/models/shop_list.dart';
+import 'package:shop_aholic/pages/choose_item.dart';
 import 'package:shop_aholic/pages/do_shopping.dart';
 
 
@@ -83,7 +84,15 @@ class _MyHomePageState extends State<MyHomePage> {
         },
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _addItem,
+        // onPressed: _addItem,
+        onPressed: () => {
+          Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const ChooseItemPage()
+                )
+              )
+        },
         tooltip: 'Metti in lista',
         child: const Icon(Icons.add_shopping_cart_rounded),
       ), // This trailing comma makes auto-formatting nicer for build methods.

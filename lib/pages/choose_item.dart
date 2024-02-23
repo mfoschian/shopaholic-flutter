@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:shop_aholic/components/product_viewer.dart';
+import 'package:shop_aholic/models/product.dart';
 import 'package:shop_aholic/models/shop_item.dart';
-import 'package:shop_aholic/components/shop_item_view.dart';
 
 class ChooseItemPage extends StatefulWidget {
 	const ChooseItemPage({super.key});
@@ -12,15 +13,26 @@ class ChooseItemPage extends StatefulWidget {
 
 class _ChooseItemPageState extends State<ChooseItemPage> {
 
-	final List<ShopItem> _items = [];
+	List<Product> _items = [];
 
-	void _addItem() {
-		setState(() {
-		});
+	void _addItem() async {
+    // TODO: goto new Product page
+    Product p = Product(id:'p001', name: 'Product One', description: 'The first Product');
+    bool ok = await p.save();
+    if(ok) {
+      setState(() {
+        _items.add(p);
+      });
+    }
 	}
 
 	void _removeItem(item) {
 	}
+
+  Future<List<Product>> readProducts() async {
+    _items = await Product.readItems();
+    return _items;
+  }
 
 	@override
 	Widget build(BuildContext context) {
@@ -29,15 +41,37 @@ class _ChooseItemPageState extends State<ChooseItemPage> {
 				backgroundColor: Theme.of(context).colorScheme.inversePrimary,
 				title: const Text('widget.title'),
 			),
-			body: Center(
-				child: ListView(
-					children: _items.map((e) => ShopItemViewer(item: e, onRemoved: () =>_removeItem(e))).toList(),
-				),
-			),
+			body: FutureBuilder(
+        future: readProducts(),
+        builder: (context, snapshot) {
+          if (snapshot.connectionState == ConnectionState.done) {
+            return Center(
+              child: ListView(
+                children: _items.map((e) => 
+                  GestureDetector(
+                    child: ProductViewer(item: e),
+                    onTap: () async {
+                      ShopItem s = ShopItem(sid:'999', item: e, done: false);
+                      bool ok = await s.save();
+                      if(ok) {
+                        Navigator.pop(context);
+                      }
+                    }
+
+                  )
+                ).toList(),
+              ),
+            );
+          }
+          else {
+              return const CircularProgressIndicator();
+            }
+        },
+      ),
 			floatingActionButton: FloatingActionButton(
 				onPressed: _addItem,
-				tooltip: 'Metti in lista',
-				child: const Icon(Icons.add_shopping_cart_rounded),
+				tooltip: 'Aggiungi prodotto',
+				child: const Icon(Icons.add),
 			), // This trailing comma makes auto-formatting nicer for build methods.
 		);
 	}
