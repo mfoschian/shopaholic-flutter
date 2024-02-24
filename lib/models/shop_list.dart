@@ -1,43 +1,45 @@
 import 'dart:async';
 
 // import 'package:shop_aholic/db/database.dart';
+import 'package:shop_aholic/models/product.dart';
 import 'package:shop_aholic/models/shop_item.dart';
 
 class ShopList {
 
   List<ShopItem> items = [];
 
-  void add(ShopItem item) {
-    ShopItem? x = items.where((element) => element.item.id == item.item.id).firstOrNull;
+  Future<void> add(Product p, [int qty=1]) async {
+    ShopItem? x = items.where((element) => element.item.id == p.id).firstOrNull;
     if( x == null ) {
-      items.add(item);
+      ShopItem x = ShopItem(item:p, qty:qty, done:false);
+      await x.save();
+      items.add(x);
     }
     else {
       x.qty++;
+      x.done = false;
+      await x.save();
     }
   }
 
-  bool del(ShopItem item, [int? qty]) {
-    qty ??= item.qty;
+  void del(Product p, [int qty = 1]) async {
     for(int i=0; i<items.length; i++) {
-      if( items[i].item.id == item.item.id ) {
+      if( items[i].item.id == p.id ) {
         if( items[i].qty > qty ) {
           items[i].qty -= qty;
         }
         else {
+          await  items[i].del();
           items.removeAt(i);
         }
-        return true;
+        break;
       }
     }
-    return false;
   }
 
-  static ShopList? current;
-
   ShopList(List<ShopItem> l) : items = l;
+
   static Future<ShopList> read() async {
-    current = ShopList(await ShopItem.readItems());
-    return current!;
+    return ShopList(await ShopItem.readItems());
   }
 }

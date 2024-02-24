@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:shop_aholic/app.dart';
 import 'package:shop_aholic/components/product_viewer.dart';
 import 'package:shop_aholic/models/product.dart';
-import 'package:shop_aholic/models/shop_item.dart';
+
 
 class ChooseItemPage extends StatefulWidget {
 	const ChooseItemPage({super.key});
@@ -17,7 +18,7 @@ class _ChooseItemPageState extends State<ChooseItemPage> {
 
 	void _addItem() async {
     // TODO: goto new Product page
-    Product p = Product(id:'p001', name: 'Product One', description: 'The first Product');
+    Product p = Product(id: App.uuid(), name: 'Product One', description: 'The first Product');
     bool ok = await p.save();
     if(ok) {
       setState(() {
@@ -50,12 +51,8 @@ class _ChooseItemPageState extends State<ChooseItemPage> {
                 children: _items.map((e) => 
                   GestureDetector(
                     child: ProductViewer(item: e),
-                    onTap: () async {
-                      ShopItem s = ShopItem(sid:'999', item: e, done: false);
-                      bool ok = await s.save();
-                      if(ok) {
-                        Navigator.pop(context);
-                      }
+                    onTap: () {
+                        Navigator.pop(context, e);
                     }
 
                   )

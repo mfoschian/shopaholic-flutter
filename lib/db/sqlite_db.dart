@@ -39,7 +39,6 @@ class SqliteDB {
     await close();
 
     String fullDbPath = join(await getDatabasesPath(),name);
-    print('Opening $fullDbPath');
 
     _db = await openDatabase(
       fullDbPath,
@@ -64,6 +63,24 @@ class SqliteDB {
       return Future.value(0);
     }
     return _db!.insert(table, values);
+  }
+
+  Future<int> update(String table, Map<String,Object?> values, {String? where, List<Object?>? whereArgs}) {
+    // returns: new id
+    //const ConflictAlgorithm ca = ConflictAlgorithm.rollback;
+    if( _db == null ) {
+      return Future.value(0);
+    }
+    return _db!.update(table, values, where: where, whereArgs: whereArgs);
+  }
+
+  Future<int> delete(String table, {String? where, List<Object?>? whereArgs}) {
+    // returns: new id
+    //const ConflictAlgorithm ca = ConflictAlgorithm.rollback;
+    if( _db == null ) {
+      return Future.value(0);
+    }
+    return _db!.delete(table, where: where, whereArgs: whereArgs);
   }
 
   Future<List<Map<String,Object?>>> query(String table, {

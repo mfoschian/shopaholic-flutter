@@ -2,21 +2,37 @@ import "package:shop_aholic/app.dart";
 import "package:shop_aholic/models/product.dart";
 
 class ShopItem {
-  String sid;
+  String? sid;
   int qty;
   Product item;
   bool done;
 
-  ShopItem({this.sid = '', required this.item, this.qty = 1, this.done = false });
+  ShopItem({this.sid, required this.item, this.qty = 1, this.done = false });
 
   Future<bool> save() async {
-    int inserted = await App.db.insert('shopitems', {
-      'sid': sid,
-      'qty': qty,
-      'status': done ? 1 : 0,
-      'product_id': item.id,
-    });
-    return inserted == 1;
+    int affected = 0;
+    if( sid == null) {
+      sid = App.uuid();
+      affected = await App.db.insert('shopitems', {
+        'sid': sid,
+        'qty': qty,
+        'status': done ? 1 : 0,
+        'product_id': item.id,
+      });
+    }
+    else {
+      // Update
+      affected = await App.db.update('shopitems', {
+        'qty': qty,
+        'status': done ? 1 : 0,
+      }, where: 'sid=?', whereArgs: [sid]);
+    }
+    return affected == 1;
+  }
+
+  Future<bool> del() async {
+    int deleted = await App.db.delete('shopitems', where: 'sid = ?', whereArgs: [sid]);
+    return deleted == 1;
   }
 
   static Future<List<ShopItem>> readItems()  async {

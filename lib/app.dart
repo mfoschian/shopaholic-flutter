@@ -1,6 +1,9 @@
 import 'package:shop_aholic/db/database.dart';
+import 'package:uuid/uuid.dart';
 
 class App {
+
+  static const Uuid _uuid = Uuid();
 
   static DB? _db;
   static DB get db {
@@ -8,5 +11,8 @@ class App {
     return _db!;
   }
 
+  static String uuid() {
+    return _uuid.v4();
+  }
 
 }

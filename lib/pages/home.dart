@@ -17,34 +17,36 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+
+  ShopList? items;
+
   // void _addItem(Product ki) {
-  void _addItem() {
-    ShopList? items = ShopList.current;
-    if (items == null) {
-      return;
-    }
+  void _addItem(Product p) {
+    if (items == null) return;
 
     setState(() {
-      Product ki = Product(id: '100', name: 'pippo');
-      items.add(ShopItem(item: ki, qty: 1, done: false));
+      items!.add(p, 1);
     });
   }
 
-  void _removeItem(ShopItem it) {
-    ShopList? items = ShopList.current;
+  void _delItem(ShopItem it) {
+    if (items == null) return;
     setState(() {
-      items?.del(it);
+      items!.del(it.item, it.qty);
     });
   }
 
   List<Widget> widgets() {
-    ShopList? items = ShopList.current;
     if( items == null ) {
       return [];
     }
     else {
-      return items.items.map((e) => ShopItemViewer(item: e, onRemoved: () => _removeItem(e))).toList();
+      return items!.items.map((e) => ShopItemViewer(item: e, onRemoved: () => _delItem(e))).toList();
     }
+  }
+
+  Future loadData() async {
+    items = await ShopList.read();
   }
 
   @override
@@ -59,7 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => DoShoppingPage(list: ShopList.current!)
+                  builder: (context) => DoShoppingPage(list: items!)
                 )
               )
             },
@@ -70,7 +72,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
 
       body: FutureBuilder(
-        future: ShopList.read(),
+        future: loadData(),
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.done) {
             return Center(
@@ -85,13 +87,17 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         // onPressed: _addItem,
-        onPressed: () => {
-          Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const ChooseItemPage()
-                )
-              )
+        onPressed: () async {
+          Product p = await Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const ChooseItemPage()
+            )
+          );
+          if(items == null) return;
+
+          await items!.add(p, 1);
+          setState(() {});                
         },
         tooltip: 'Metti in lista',
         child: const Icon(Icons.add_shopping_cart_rounded),
