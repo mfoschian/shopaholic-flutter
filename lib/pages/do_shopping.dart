@@ -17,6 +17,14 @@ class DoShoppingPage extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Theme.of(context).colorScheme.inversePrimary,
           title: Text(title),
+          actions: [
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              child: const Icon(Icons.stop)
+            )
+          ]
         ),
         body: ListView(
           children: widgets(),

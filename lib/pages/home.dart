@@ -5,6 +5,7 @@ import 'package:shop_aholic/models/shop_item.dart';
 import 'package:shop_aholic/models/shop_list.dart';
 import 'package:shop_aholic/pages/choose_item.dart';
 import 'package:shop_aholic/pages/do_shopping.dart';
+import 'package:shop_aholic/pages/edit_item.dart';
 
 
 class MyHomePage extends StatefulWidget {
@@ -21,12 +22,11 @@ class _MyHomePageState extends State<MyHomePage> {
   ShopList? items;
 
   // void _addItem(Product ki) {
-  void _addItem(Product p) {
+  void _addItem(Product p) async {
     if (items == null) return;
+    await items!.add(p, 1);
 
-    setState(() {
-      items!.add(p, 1);
-    });
+    setState(() {});
   }
 
   void _delItem(ShopItem it) {
@@ -36,12 +36,28 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
-  List<Widget> widgets() {
+  List<Widget> widgets(BuildContext context) {
     if( items == null ) {
       return [];
     }
     else {
-      return items!.items.map((e) => ShopItemViewer(item: e, onRemoved: () => _delItem(e))).toList();
+      return items!.items.map((e) => ShopItemViewer(item: e,
+        onRemoved: () => _delItem(e),
+        onEdit: () async {            // Navigator.of(context).push(route)
+            Product? p = await Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => EditItemPage(item: e.item)
+              )
+            );
+            if(p!=null) {
+              await p.save();
+              e.item.updateFrom(p);
+              setState(() {});
+            }
+          }
+        )
+      ).toList();
     }
   }
 
@@ -56,7 +72,7 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
         actions: [
-          ElevatedButton.icon(
+          ElevatedButton(
             onPressed: () => {
               Navigator.push(
                 context,
@@ -65,19 +81,43 @@ class _MyHomePageState extends State<MyHomePage> {
                 )
               )
             },
-            icon: const Icon(Icons.play_arrow),
-            label: const Text('go')
-            )
-          ]
+            child: const Icon(Icons.play_arrow)
+          )
+        ],
       ),
-
+      drawer: const Text('Hello'),
+      // drawer: ListView(
+      //   //padding: EdgeInsets.zero,
+      //   children: [
+      //     const DrawerHeader(
+      //       decoration: BoxDecoration(
+      //         color: Colors.blue,
+      //       ),
+      //       child: Text('Drawer Header'),
+      //     ),
+      //     ListTile(
+      //       title: const Text('Item 1'),
+      //       onTap: () {
+      //         // Update the state of the app.
+      //         // ...
+      //       },
+      //     ),
+      //     ListTile(
+      //       title: const Text('Item 2'),
+      //       onTap: () {
+      //         // Update the state of the app.
+      //         // ...
+      //       },
+      //     ),
+      //   ],
+      // ),
       body: FutureBuilder(
         future: loadData(),
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.done) {
             return Center(
               child: ListView(
-                children: widgets()
+                children: widgets(context)
               ),
             );
           } else {
@@ -86,18 +126,16 @@ class _MyHomePageState extends State<MyHomePage> {
         },
       ),
       floatingActionButton: FloatingActionButton(
-        // onPressed: _addItem,
         onPressed: () async {
-          Product p = await Navigator.push(
+          Product? p = await Navigator.push(
             context,
             MaterialPageRoute(
               builder: (context) => const ChooseItemPage()
             )
           );
-          if(items == null) return;
-
-          await items!.add(p, 1);
-          setState(() {});                
+          if(p != null) {
+            _addItem(p);
+          }
         },
         tooltip: 'Metti in lista',
         child: const Icon(Icons.add_shopping_cart_rounded),

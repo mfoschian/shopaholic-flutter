@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shop_aholic/app.dart';
 import 'package:shop_aholic/components/product_viewer.dart';
 import 'package:shop_aholic/models/product.dart';
+import 'package:shop_aholic/pages/edit_item.dart';
 
 
 class ChooseItemPage extends StatefulWidget {
@@ -16,9 +17,7 @@ class _ChooseItemPageState extends State<ChooseItemPage> {
 
 	List<Product> _items = [];
 
-	void _addItem() async {
-    // TODO: goto new Product page
-    Product p = Product(id: App.uuid(), name: 'Product One', description: 'The first Product');
+	void _addItem(Product p) async {
     bool ok = await p.save();
     if(ok) {
       setState(() {
@@ -27,8 +26,6 @@ class _ChooseItemPageState extends State<ChooseItemPage> {
     }
 	}
 
-	void _removeItem(item) {
-	}
 
   Future<List<Product>> readProducts() async {
     _items = await Product.readItems();
@@ -49,24 +46,48 @@ class _ChooseItemPageState extends State<ChooseItemPage> {
             return Center(
               child: ListView(
                 children: _items.map((e) => 
-                  GestureDetector(
-                    child: ProductViewer(item: e),
-                    onTap: () {
+                  Row( children: [
+                    GestureDetector(
+                      child: ProductViewer(item: e),
+                      onTap: () {
                         Navigator.pop(context, e);
-                    }
-
-                  )
+                      }
+                    ),
+                    ElevatedButton(
+                      onPressed: () async {
+                        Product? p = await Navigator.push(context,
+                          MaterialPageRoute(
+                            builder: (context) => EditItemPage(item: e)
+                          )
+                        );
+                        if( p != null ) {
+                          await p.save();
+                          e.updateFrom(p);
+                          setState(() {});
+                        }
+                      },
+                      child: const Icon(Icons.edit)
+                    )
+                  ])
                 ).toList(),
               ),
             );
           }
           else {
-              return const CircularProgressIndicator();
-            }
+            return const CircularProgressIndicator();
+          }
         },
       ),
 			floatingActionButton: FloatingActionButton(
-				onPressed: _addItem,
+				onPressed: () async {
+          Product? p = await Navigator.push(context,
+            MaterialPageRoute(
+              builder: (context) => EditItemPage(item: Product(id: App.uuid(), name: ''))
+            )
+          );
+          if( p == null ) return;
+          _addItem(p);
+        },
 				tooltip: 'Aggiungi prodotto',
 				child: const Icon(Icons.add),
 			), // This trailing comma makes auto-formatting nicer for build methods.
