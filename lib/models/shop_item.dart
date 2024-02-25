@@ -38,7 +38,7 @@ class ShopItem {
   static Future<List<ShopItem>> readItems()  async {
 
     const sql = """SELECT s.sid AS sid, s.qty AS qty, s.status AS status,
-      p.id AS product_id, p.name AS name, p.description AS description
+      p.id AS product_id, p.name AS name, p.description AS description, p.shopName as shopName
     FROM
       shopitems s, products p
     WHERE
@@ -54,7 +54,8 @@ class ShopItem {
             'status': status as int,
             'product_id': pid as String,
             'name': pname as String,
-            'description': pdesc as String
+            'description': pdesc as String?,
+            'shopName': sname as String?
           } in rows)
         ShopItem(
           sid: sid,
@@ -63,7 +64,8 @@ class ShopItem {
           item: Product(
             id: pid,
             name: pname,
-            description: pdesc
+            description: pdesc,
+            shopName: sname
           )
         )
     ];

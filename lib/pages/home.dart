@@ -1,4 +1,9 @@
+import 'dart:convert';
+import 'dart:io';
+
+import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
+import 'package:shop_aholic/components/drawer_menu.dart';
 import 'package:shop_aholic/components/shop_item_view.dart';
 import 'package:shop_aholic/models/product.dart';
 import 'package:shop_aholic/models/shop_item.dart';
@@ -65,6 +70,24 @@ class _MyHomePageState extends State<MyHomePage> {
     items = await ShopList.read();
   }
 
+  Future<void> doImport() async {
+    FilePickerResult? res = await FilePicker.platform.pickFiles();
+    if(res == null) {
+      return;
+    }
+
+    String filePath = res.files.single.path!;
+    File file = File(filePath);
+    String json = await file.readAsString();
+
+    Map<String, dynamic> o = jsonDecode(json);
+    List<dynamic> items = o["items"];
+    for( dynamic item in items ) {
+      Product p = Product.fromJson(item);
+      await p.save();
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -85,32 +108,11 @@ class _MyHomePageState extends State<MyHomePage> {
           )
         ],
       ),
-      drawer: const Text('Hello'),
-      // drawer: ListView(
-      //   //padding: EdgeInsets.zero,
-      //   children: [
-      //     const DrawerHeader(
-      //       decoration: BoxDecoration(
-      //         color: Colors.blue,
-      //       ),
-      //       child: Text('Drawer Header'),
-      //     ),
-      //     ListTile(
-      //       title: const Text('Item 1'),
-      //       onTap: () {
-      //         // Update the state of the app.
-      //         // ...
-      //       },
-      //     ),
-      //     ListTile(
-      //       title: const Text('Item 2'),
-      //       onTap: () {
-      //         // Update the state of the app.
-      //         // ...
-      //       },
-      //     ),
-      //   ],
-      // ),
+      drawer: MyDrawerMenu(
+        onImport: () async {
+          await doImport();
+        },
+      ),
       body: FutureBuilder(
         future: loadData(),
         builder: (context, snapshot) {

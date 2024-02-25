@@ -15,4 +15,8 @@ class App {
     return _uuid.v4();
   }
 
+  static Future<void> importProducts() {
+    return Future.value();
+  }
+
 }

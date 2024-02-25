@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:shop_aholic/models/product.dart';
 import 'package:shop_aholic/models/shop_item.dart';
 
 class ShopItemViewer extends StatelessWidget {
@@ -9,10 +8,7 @@ class ShopItemViewer extends StatelessWidget {
   final Function? onRemoved;
   final Function? onEdit;
 
-  goToEditPageFor(Product it) {
-  }
-
-  @override
+    @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(10),

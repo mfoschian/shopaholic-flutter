@@ -1,22 +1,27 @@
 import "package:shop_aholic/app.dart";
-import "package:shop_aholic/models/shop_point.dart";
 
 class Product {
   String? id;
   String name;
   String? description;
-  ShopPoint? shopPoint;
+  String? shopName;
 
-  Product({required this.id, required this.name, this.description, this.shopPoint});
+  Product({required this.id, required this.name, this.description, this.shopName});
+  Product.fromJson(Map<String,dynamic> json) : 
+    id = json['id'] as String?,
+    name = json['name'] as String,
+    description = json['description'] as String,
+    shopName = json['shopName'] as String?
+  ;
 
   Product dup() {
-    return Product(id: id, name: name, description: description, shopPoint: shopPoint );
+    return Product(id: id, name: name, description: description, shopName: shopName );
   }
 
   void updateFrom(Product p) {
     name = p.name;
     description = p.description;
-    shopPoint = p.shopPoint;
+    shopName = p.shopName;
   }
 
   Future<bool> save() async {
@@ -24,13 +29,18 @@ class Product {
     Map<String,Object?>? values = {
       'id': id ?? App.uuid(),
       'name': name,
-      'description': description
+      'description': description,
+      'shopName': shopName
     };
     if( id == null ) {
       affected = await App.db.insert('products', values);
     }
     else {
       affected = await App.db.update('products', values, where: 'id=?', whereArgs: [id]);
+      if( affected == 0 ) {
+        // unkown id: insert !
+        affected = await App.db.insert('products', values);
+      }
     }
     return affected == 1;
   }
@@ -41,13 +51,27 @@ class Product {
       for (final {
             'id': id as String,
             'name': name as String,
-            'description': desc as String
+            'description': desc as String?,
+            'shopName': sname as String?
           } in rows)
         Product(
           id: id,
           name: name,
-          description: desc
+          description: desc,
+          shopName: sname
         )
+    ];
+  }
+
+  static Future<List<String>> getShopNames() async {
+    List<Map<String,Object?>> rows = await App.db.queryRaw("""
+        SELECT DISTINCT shopName
+        FROM products
+        WHERE shopName IS NOT NULL
+        ORDER BY shopName"""
+    );
+    return [
+      for( final { 'shopName': name as String} in rows ) name
     ];
   }
 }

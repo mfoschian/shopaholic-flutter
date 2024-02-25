@@ -39,6 +39,8 @@ dependencies:
   sqflite: ^2.3.2
   path: ^1.9.0
   uuid: ^4.3.2
+  file_picker:
+  flutter_typeahead:
 
 dev_dependencies:
   flutter_test:

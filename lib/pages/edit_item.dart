@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_typeahead/flutter_typeahead.dart';
 import 'package:shop_aholic/models/product.dart';
 
 class EditItemPage extends StatefulWidget {
@@ -15,17 +16,31 @@ class _EditItemPageState extends State<EditItemPage> {
 
   final _formKey = GlobalKey<FormState>();
   Product? _product;
+  List<String>? _shopNames;
+  final TextEditingController _controller = TextEditingController();
+
+  void loadData() async {
+    _shopNames = await Product.getShopNames();
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    loadData();
+  }
 
   @override
   Widget build(BuildContext context) {
+    _product ??= widget.item.dup();
+    _controller.text = _product!.shopName ?? '';
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
         actions: [
           ElevatedButton(onPressed: () {
-            _product = widget.item.dup();
-            _formKey.currentState?.save();
+            _formKey.currentState?.save(); // Trigger onSave on form fields
+            _product!.shopName = _controller.text;
             Navigator.pop(context, _product);
           },
           child: const Icon(Icons.save)
@@ -45,6 +60,32 @@ class _EditItemPageState extends State<EditItemPage> {
             TextFormField(
               initialValue: widget.item.description,
               onSaved: (value) { _product!.description = value; },
+            ),
+            const Text("Negozio"),
+            TypeAheadField<String>(
+              controller: _controller,
+              suggestionsCallback: (String search) {
+                if (search == '' || _shopNames == null) {
+                  return const [];
+                }
+                List<String> res = _shopNames!.where((String option) {
+                  return option.toLowerCase().contains(search.toLowerCase());
+                }).toList();
+                if(res.isEmpty && _shopNames!.length < 5) {
+                  return _shopNames!.where((String s) => s.isNotEmpty).toList();
+                }
+                return res;
+              },
+              itemBuilder: (context, shopName) {
+                return ListTile(
+                  title: Text(shopName),
+                  // subtitle: Text(city.country),
+                );
+              },
+              emptyBuilder: (context) => const Text('Prova a scrivere il nome di un negozio'),
+              onSelected: (String value) {
+                _controller.text = value;
+              },
             ),
           ]
         )

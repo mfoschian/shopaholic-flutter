@@ -37,7 +37,7 @@ class _ChooseItemPageState extends State<ChooseItemPage> {
 		return Scaffold(
 			appBar: AppBar(
 				backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-				title: const Text('widget.title'),
+				title: const Text('Prodotti'),
 			),
 			body: FutureBuilder(
         future: readProducts(),

@@ -1,0 +1,3596 @@
+{
+	"items": [
+		{
+			"id": "f1e91a55-cc71-4b43-aac6-c5e21e2633f5",
+			"name": "abbracci",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "d5cfa554-77f3-4410-9e0a-4794ce18b2e5",
+			"name": "ace",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "74c2e743-a576-4b1c-b4b6-c024cc93a847",
+			"name": "ace rosso",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "81d22fe5-9724-42c5-9779-44e901908ce3",
+			"name": "Aceto Bianco",
+			"description": "Ponti 1l",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "1b2959ed-3d08-44e5-8aed-a831f4848a69",
+			"name": "Acetone unghie",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "eb54fa5d-2742-4521-a969-1c14d57f4561",
+			"name": "aciclovir",
+			"description": "",
+			"shopName": "Farmacia",
+			"zoneName": ""
+		},
+		{
+			"id": "1a3b2d4e-2c4c-4f78-ba68-79d5162e6786",
+			"name": "acqua di rose",
+			"description": "Roberts ",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "94d823fb-1ac6-41bd-836d-3d63923df036",
+			"name": "Acqua GRANDE",
+			"description": "cassa",
+			"shopName": "A&O",
+			"zoneName": "bibite"
+		},
+		{
+			"id": "d9002ed7-fbf8-4309-ab02-b72099add0bd",
+			"name": "Acqua PICCOLA",
+			"description": "confezione da 6 San Benedetto",
+			"shopName": "A&O",
+			"zoneName": "bibite"
+		},
+		{
+			"id": "cfa6eb63-d803-4f7a-a44b-c1d0b8d114be",
+			"name": "aglio",
+			"description": "",
+			"shopName": "Siciliano",
+			"zoneName": ""
+		},
+		{
+			"id": "fff4fe65-9b1c-4113-9932-4dbaa1843366",
+			"name": "Ajax",
+			"description": "optimal 7 bianco tappo rosso",
+			"shopName": "A&O",
+			"zoneName": "corsia 5"
+		},
+		{
+			"id": "3cec95d2-26e9-47ab-9e98-b6c347c1be96",
+			"name": "ajax",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "cf396750-d726-4dfc-af2c-325762b6ddda",
+			"name": "ajax vetri",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "96728d3d-c28d-497f-81fd-c4a6c58c39fd",
+			"name": "alici",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "ca979d7a-12f5-4633-960c-7762c5c748a2",
+			"name": "alloro",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "b5e7b371-e3cb-4dbc-82b8-121e75af06bd",
+			"name": "amuchina",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "098fbf41-b76e-412c-bec5-4f68388e17cc",
+			"name": "ancora uno",
+			"description": "Biscotti cioccolato",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "1b242e84-2645-4d33-91d4-a55fc6da64e3",
+			"name": "ancora uno",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "6f24bf2b-2322-49e9-b541-ff07dc1dabc0",
+			"name": "Anguria",
+			"description": "Senza semi",
+			"shopName": "A&O",
+			"zoneName": "frutta"
+		},
+		{
+			"id": "315c194c-056f-44b7-bc37-3828fbbdd30b",
+			"name": "anticalcare lavatrice",
+			"description": "winnis",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "164bb81a-d95e-4b21-85f3-be4dfe464ff1",
+			"name": "arachidi",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "a263690f-2aea-4088-b240-30c475a40df4",
+			"name": "arance",
+			"description": "",
+			"shopName": "Siciliano",
+			"zoneName": ""
+		},
+		{
+			"id": "4573474e-4c67-43bd-9dac-f0af3d5cc570",
+			"name": "asparagi",
+			"description": "",
+			"shopName": "Ferula",
+			"zoneName": ""
+		},
+		{
+			"id": "70cd165f-fd32-4ba3-9cf6-8f01a3d99da9",
+			"name": "Assorbenti Blu",
+			"description": "Nuvenia 10 sottile goodnight+ flusso molto abbondante ",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "861f32d4-70c1-4055-b043-e1e466614617",
+			"name": "Assorbenti Rosa",
+			"description": "Nuvenia 16 sottile+ con ali flusso normale",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "6db2c0ee-d3c6-40cb-8a1a-1e73b3b6e57b",
+			"name": "assorbenti salvaslip",
+			"description": "careefree **",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "e297d7c5-f4c1-41d7-9492-d1a4191d0cda",
+			"name": "assorbenti sottili",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "0079788c-fede-4cfa-bf1c-565489bc9ca7",
+			"name": "assorbenti sottili blu",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "3dcf0e51-a4d6-4dff-9ae3-2923e25eec7f",
+			"name": "autan",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "d3493a04-1cd6-45eb-9be0-9229f2d49b18",
+			"name": "balsamo",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "b2cad460-2918-4e13-b893-658cec69c675",
+			"name": "banane",
+			"description": "",
+			"shopName": "Siciliano",
+			"zoneName": ""
+		},
+		{
+			"id": "be3dfda6-a883-4549-89ca-5440f2dc09df",
+			"name": "barchette",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "16276bec-61df-4008-81d1-e52b84f5dd55",
+			"name": "Barrette Gran Cereale",
+			"description": "Mulino Bianco. 5 barrette mandorle e mirtilli rossi",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "ad8e886f-1779-48b2-9d74-5ff9bd2d9b2c",
+			"name": "barrette misura",
+			"description": "mandorle noci mirtilli acai",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "c5b1c896-88d1-4a40-92b7-bc1e252f6016",
+			"name": "barrette mulino bianco",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "34252001-7954-47de-a59f-3a80235c63d6",
+			"name": "basilico",
+			"description": "",
+			"shopName": "Ferula",
+			"zoneName": ""
+		},
+		{
+			"id": "550a5428-b3c1-47e7-9650-3823e3b2b19b",
+			"name": "bastoncini",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "a087c00d-57fd-4297-9f4f-dc6d19f96faa",
+			"name": "bastoncini spinaci",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "89f5125a-f5c2-49b1-9a76-69b286ec6827",
+			"name": "batteria aa",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "6de13f1f-11af-43e6-8552-f9e43e60bf34",
+			"name": "batteria aaa",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "78770006-4d26-4a85-98d6-b97bc56afd76",
+			"name": "Beltè alla pesca",
+			"description": "cassa da 6",
+			"shopName": "A&O",
+			"zoneName": "bibite"
+		},
+		{
+			"id": "fae19141-e0d2-47ee-9469-168b8d502450",
+			"name": "benza Corsa",
+			"description": "",
+			"shopName": "costantin",
+			"zoneName": ""
+		},
+		{
+			"id": "cd4946fd-2d71-4819-a3c9-950dc8cdf892",
+			"name": "benza x",
+			"description": "",
+			"shopName": "costantin",
+			"zoneName": ""
+		},
+		{
+			"id": "597213d3-18a8-4b60-8a64-0def2091bbfc",
+			"name": "besciamella",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "9b65bb3d-66df-4bf2-baef-4dc5561bdcae",
+			"name": "Betadine",
+			"description": "",
+			"shopName": "Farmacia",
+			"zoneName": ""
+		},
+		{
+			"id": "d3d9b180-29b5-4e06-bd84-bb86f6635e41",
+			"name": "bibanesi",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "3477984b-fc55-4dae-ad65-2e542ce28cb9",
+			"name": "bicarbonato",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "f03e8b62-3788-4aae-80c9-49084858d7bc",
+			"name": "bieta coste",
+			"description": "",
+			"shopName": "ferula",
+			"zoneName": ""
+		},
+		{
+			"id": "2b58e4d8-ef8e-4a0c-bbb1-51f7662ecab9",
+			"name": "big Bubbles",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "1ce3ea37-87a6-4e2a-8215-e07ca206b066",
+			"name": "biscotti gocce cioccolato m",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "bc837462-8351-42e5-952c-a8f15269e771",
+			"name": "biscotti m",
+			"description": "Saiwa 5 cereali",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "0d9d1bd3-556f-4e98-9928-d853bc1a8f8b",
+			"name": "biscotti oro saiwa grano fondente",
+			"description": "Frollini integrali con gocce di cioccolato fondente",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "ab43e159-8042-444d-89db-6dd98266176f",
+			"name": "biscotti riso",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "1d8dae19-cdf4-41aa-9057-646b1ed837f2",
+			"name": "biscotti saiwa",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "53d1ce36-a945-453c-a6eb-ff464cd27a32",
+			"name": "borotalco",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "8749665a-61d9-464d-b831-25058023da1f",
+			"name": "bresaola",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "1747d98d-9317-4a4e-a7e8-cf0c7d20bb00",
+			"name": "briosche albicocca",
+			"description": "mulino bianco cornetti Albicocca ",
+			"shopName": "A&O",
+			"zoneName": "corsia 2"
+		},
+		{
+			"id": "7f6948f7-42c4-4ea9-99a2-1fbff560ac06",
+			"name": "brodo",
+			"description": "manzo verde",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "aacfa451-368a-437a-8ede-4e413125080d",
+			"name": "brodo",
+			"description": "star carni miste",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "4e1d2548-6464-407b-9c02-f31231e7a5ab",
+			"name": "brovada",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "20b44834-8d08-4779-a0d2-24bb922f68af",
+			"name": "bruschetta",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "e8550761-b943-43b9-bfcd-1ef61cec821c",
+			"name": "budino",
+			"description": "Cameo chiaro",
+			"shopName": "Ferula",
+			"zoneName": ""
+		},
+		{
+			"id": "85f1c1b2-f001-4084-82e8-0d111b3185b7",
+			"name": "bufala",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "0dbfe103-48a2-4842-b0f9-327914fb8616",
+			"name": "Burro",
+			"description": "Latterie friulane 250g",
+			"shopName": "A&O",
+			"zoneName": "frigo"
+		},
+		{
+			"id": "e4bb3493-d25b-41c3-b6ca-92605f1fe6de",
+			"name": "burrocacao bianco",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "2e635a43-ff89-48f3-8d86-143116f8caab",
+			"name": "burrocacao blu",
+			"description": "labello",
+			"shopName": "A&O",
+			"zoneName": "corsia 4"
+		},
+		{
+			"id": "e43381cc-dc34-473f-a1e8-339fa98ebd88",
+			"name": "cacao",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "b355116f-b14e-4b0a-8846-d4c958a47511",
+			"name": "Caffè",
+			"description": "Pellini arabica in barattolo nero",
+			"shopName": "A&O",
+			"zoneName": "corsia 1"
+		},
+		{
+			"id": "c96803cc-fb8a-4ed9-900c-fcdac927d54f",
+			"name": "calmante",
+			"description": "",
+			"shopName": "parafarmacia",
+			"zoneName": ""
+		},
+		{
+			"id": "b8dc85a2-7997-4f85-aa30-2db521fa9cf9",
+			"name": "calzini Lorenzo",
+			"description": "",
+			"shopName": "Emisfero",
+			"zoneName": ""
+		},
+		{
+			"id": "df78d6fb-1ab2-4a8c-91ee-1b204cf42996",
+			"name": "Camomilla",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "c65ec089-1b40-4f62-9738-57a751a668b4",
+			"name": "candeggina",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "c2cbc58b-5fae-41c2-aaa5-a899c4005b8c",
+			"name": "cannella",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "6ddc14e0-7817-491d-905f-90c6d56cd92f",
+			"name": "cannucce",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "ea840249-600c-4708-b2b6-4c315e172a64",
+			"name": "capperi",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "5b392d7e-700b-4c9e-b250-abf19097eddd",
+			"name": "capuccio",
+			"description": "",
+			"shopName": "ferula",
+			"zoneName": ""
+		},
+		{
+			"id": "6fc27b6a-1bdb-469e-b07e-d6f9ecc9cd12",
+			"name": "carciofi",
+			"description": "",
+			"shopName": "Bosio",
+			"zoneName": ""
+		},
+		{
+			"id": "64fe8e52-ade3-45cc-baa3-ec31fd421f13",
+			"name": "carciofini",
+			"description": "",
+			"shopName": "Siciliano",
+			"zoneName": ""
+		},
+		{
+			"id": "b1c96502-1080-45af-8d58-1f8f29fb1365",
+			"name": "carote",
+			"description": "",
+			"shopName": "Siciliano",
+			"zoneName": ""
+		},
+		{
+			"id": "d1253714-7a47-441d-894a-08ccd9fe6c8a",
+			"name": "carta forno",
+			"description": "domopack",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "ed6c7fce-9426-4026-b5c8-e1df10619a53",
+			"name": "Carta Igenica grande",
+			"description": "Selex Rotoloni conf. Da 4",
+			"shopName": "A&O",
+			"zoneName": "corsia 4"
+		},
+		{
+			"id": "78c57822-b335-4958-a424-0b2729a14335",
+			"name": "Carta Igenica piccola",
+			"description": "Selex 20 rotoli",
+			"shopName": "A&O",
+			"zoneName": "corsia 4"
+		},
+		{
+			"id": "bb1a9f50-4787-4eeb-a5d8-b03c1dff62d1",
+			"name": "cellophane ",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "4e053610-05fe-4537-8330-d3519cdde132",
+			"name": "cerotti",
+			"description": "lungo bianco",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "8d069118-954a-41b4-af87-9921060fe863",
+			"name": "cerotti",
+			"description": "piccoli",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "23762141-05cd-4ba9-89d4-248735d12ef6",
+			"name": "cerotto 6x9",
+			"description": "",
+			"shopName": "farmacia",
+			"zoneName": ""
+		},
+		{
+			"id": "39059f36-6116-4edc-b0e8-0b4e877ae116",
+			"name": "cetrioli",
+			"description": "",
+			"shopName": "Siciliano",
+			"zoneName": ""
+		},
+		{
+			"id": "36caf599-f983-4068-b3f6-d3d3a6d5b091",
+			"name": "cevapcici",
+			"description": "",
+			"shopName": "Regolin",
+			"zoneName": ""
+		},
+		{
+			"id": "fdc3ac62-ca8a-46f9-a979-bfe0c4608363",
+			"name": "chanteclear",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "e1ae9553-761f-4d05-9bcb-647e61128556",
+			"name": "chilly",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "85b0ce6f-68a2-403d-a42f-4db06aacfcf4",
+			"name": "choco crave",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": "corsia 1"
+		},
+		{
+			"id": "b16e81ad-5bf3-49b7-9779-a7febc6c8b87",
+			"name": "ciabatte e",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "1cc195a7-0435-48b1-b5c2-42f9ae426165",
+			"name": "cibo tartaruga",
+			"description": "",
+			"shopName": "Amazzonia",
+			"zoneName": ""
+		},
+		{
+			"id": "6d9e0071-8e85-4c56-bd7b-6cb47eeefdb3",
+			"name": "ciocco kimder",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "f5a6fb1a-3537-4433-a3bb-87e739a73459",
+			"name": "Cioccograno",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "69899183-f1b7-4bdb-a486-ee5efa972e03",
+			"name": "cioccograno",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "70510a47-3958-4743-abe7-1d2cd1d5885f",
+			"name": "cioccolato al latte",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "30b0893d-5c4a-45f2-81a9-12e7f0af4444",
+			"name": "cioccolato fondente ",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "b006331f-3243-416b-b384-9d2bffc9eee3",
+			"name": "cioccolato semini",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "4ecccf68-a14d-4b7d-9b5d-4f6ad6175002",
+			"name": "cipolla bianca",
+			"description": "",
+			"shopName": "Siciliano",
+			"zoneName": ""
+		},
+		{
+			"id": "3501b2b0-c2b8-481e-a74e-463ec275ff94",
+			"name": "citrosidina",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "e4eb7496-5b50-4a6b-be29-c36059abea00",
+			"name": "citrosil",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "56db3190-f86d-4cf5-9768-a544cea0c03f",
+			"name": "clementine",
+			"description": "",
+			"shopName": "Siciliano",
+			"zoneName": ""
+		},
+		{
+			"id": "46a4b897-2102-4b2e-9258-b586ea6dd888",
+			"name": "Coca Cola",
+			"description": "Pacco da 4",
+			"shopName": "A&O",
+			"zoneName": "bibite"
+		},
+		{
+			"id": "954018ea-bd13-440d-b062-43f97eb105fd",
+			"name": "coca grande",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "b8bbc371-f513-495e-926b-9f847268c270",
+			"name": "coco crave",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "d4a186be-c815-4534-8966-08548b154c3e",
+			"name": "coco riso",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "6831f630-7653-45d2-87c0-cb1945b771b0",
+			"name": "colore capelli",
+			"description": "",
+			"shopName": "Farmacia",
+			"zoneName": ""
+		},
+		{
+			"id": "e8303c80-d00b-4170-9625-adcb6d89eb2c",
+			"name": "Coni alla panna",
+			"description": "Selex",
+			"shopName": "A&O",
+			"zoneName": "freezer"
+		},
+		{
+			"id": "2bf137e4-e3c8-4df4-8639-21e863f0fd6c",
+			"name": "connettivina",
+			"description": "",
+			"shopName": "Farmacia",
+			"zoneName": ""
+		},
+		{
+			"id": "1c52025c-8d03-41b6-965d-df351fda4f9d",
+			"name": "corn flakes kellogs",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "154dc0d7-652b-4892-a1eb-5a8796ef081c",
+			"name": "Corn Flakes M",
+			"description": "Venosta naturelle",
+			"shopName": "A&O",
+			"zoneName": "corsia 1"
+		},
+		{
+			"id": "864ffc33-4ccd-417f-957a-e8b2761a6003",
+			"name": "cotechino",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "92fe2ca2-022d-4091-a6a3-31c98f94682c",
+			"name": "Coton fiocchi",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "4eca18e9-9c15-4f5d-8ad0-c9b5df0b5b4a",
+			"name": "cotto",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "3d8e1acf-67cc-4b0d-9665-05cfaaa9271c",
+			"name": "cotto r",
+			"description": "",
+			"shopName": "Regolin",
+			"zoneName": ""
+		},
+		{
+			"id": "cd81cc5b-c951-4c25-b501-f06df0ac1c09",
+			"name": "cotton fioc",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "d03dd213-438e-4243-92a5-a558cf4d425a",
+			"name": "cous cous",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "2eb30d72-2c85-43bd-8941-5dbb8b2e8378",
+			"name": "crakers",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "b7f724eb-28d2-4898-a141-c343c0c798dc",
+			"name": "crema corpo",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "19cb4945-f0f6-4a13-8beb-cc10e0e2ea01",
+			"name": "crema mani",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "0b7ad795-d611-4d50-a53f-eb0ada27096f",
+			"name": "crema sole viso",
+			"description": "",
+			"shopName": "farmacia",
+			"zoneName": ""
+		},
+		{
+			"id": "979cae84-a9ec-4951-b9d1-e918741688b1",
+			"name": "crepes",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "09b37adb-7378-49dd-b38d-c885eef51153",
+			"name": "crescenza",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "14914f74-15c5-4c9d-8669-a9a3f275fb57",
+			"name": "crocchette",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "aeb73a91-c6ab-41e9-ac61-8ef4545a80b4",
+			"name": "crostini",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "4569a527-f0af-422e-bad8-09a8b1a313f7",
+			"name": "crostini dorato",
+			"description": "buitoni",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "06d9a9db-1a4e-489c-ba6f-3f020987690c",
+			"name": "crostoli",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "7afb4ee3-be31-47ad-806b-188f8bccfad4",
+			"name": "crudo",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "153cf09b-c1b9-4ce6-b9d4-05539984564b",
+			"name": "cucciolone",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "cba11dc9-04ad-403d-a0a6-c7117d680816",
+			"name": "curry",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "4fa23943-8f6c-4cb6-ad0f-ef91ebd5a528",
+			"name": "dado carne",
+			"description": "Bauer, confezione rossa",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "bbc293b8-4383-492e-9eed-12731ae509a5",
+			"name": "dado verde",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "a0991bff-90ce-4df6-8b8f-9d54fb9ae2dd",
+			"name": "datteri",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "7e18150d-e0c3-4416-92ba-3d7c33909634",
+			"name": "dentifricio Erika",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "6f4809a5-657c-4175-ac1c-9c489441e92c",
+			"name": "dentifricio Lorenzo",
+			"description": "elmex",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "da5b1571-48b9-40c9-aae3-ac8d941dd0e5",
+			"name": "dentifricio Marco",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "0bdffcf4-5177-45d6-8291-bd07d33684d4",
+			"name": "Dentifricio Sabrina",
+			"description": "blanx",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "7f9d121e-afd3-48c6-8f36-216ec9f41d75",
+			"name": "deodorante azzurro ",
+			"description": "",
+			"shopName": "emisfero farma",
+			"zoneName": ""
+		},
+		{
+			"id": "8803e7c0-3a44-4c7b-b30f-f4da413cc33e",
+			"name": "deodorante rosa",
+			"description": "",
+			"shopName": "emisfero farma",
+			"zoneName": ""
+		},
+		{
+			"id": "28cd66df-e5ac-4f19-9f4a-16b36411ff2b",
+			"name": "dermogella",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "f40386ae-e2aa-47de-99a2-8a1ca58bb8b2",
+			"name": "detersivo",
+			"description": "Winnis sacco",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "2c7150ba-28ba-4b32-bba6-9426d4f3c622",
+			"name": "detersivo piatti",
+			"description": "Winni's piatti concentrato 500ml",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "535fad88-7190-4e52-8d39-9e181574ff97",
+			"name": "Detersivo Winni's",
+			"description": "nature lavatrice ecoformato aleppo e verbena",
+			"shopName": "A&O",
+			"zoneName": "corsia 5"
+		},
+		{
+			"id": "0dfa610b-f276-4d10-9546-fcfbb4a0359b",
+			"name": "dicoflor",
+			"description": "",
+			"shopName": "farmacia",
+			"zoneName": ""
+		},
+		{
+			"id": "b81f102b-4953-4b8a-a60d-76726d523ce6",
+			"name": "dischetti ",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "271c0797-4cde-4fa7-998a-5fe132f9dab2",
+			"name": "Dixan",
+			"description": "Multicolor soluzione 360 gradi",
+			"shopName": "A&O",
+			"zoneName": "corsia 5"
+		},
+		{
+			"id": "609ddc17-4cdc-4584-83ef-31b1da89dac7",
+			"name": "dixan",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "88c6aa6e-da00-4609-bb70-b4dd5d758d1f",
+			"name": "domopack",
+			"description": "Stagnola",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "9c7b37d2-0cfb-4222-9bea-7141c9d2ad9c",
+			"name": "effervescente brioschi",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "9529b5a6-0285-4df1-aca5-22a5be3494d0",
+			"name": "enterogermina",
+			"description": "",
+			"shopName": "Farmacia",
+			"zoneName": ""
+		},
+		{
+			"id": "910890fe-2c8b-4e9d-9cf1-96505759e98f",
+			"name": "fagioli",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "500433fe-cb8e-440a-ab73-dd2d19299e49",
+			"name": "Farfalle",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "afae7604-ee9e-457f-9485-92b6dbd03fc4",
+			"name": "farfalle",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "ead15ff3-a0a4-41cc-9cae-fbd06d24bca3",
+			"name": "Farina",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "ebd2924e-e065-490f-af7c-843587629298",
+			"name": "farina",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "dec495e1-92cc-4b53-b3ac-840b061f3cae",
+			"name": "Fazzoletti",
+			"description": "Selex pacco da 10",
+			"shopName": "A&O",
+			"zoneName": "corsia 4"
+		},
+		{
+			"id": "78d736ad-3088-415e-8fb9-854dafc8e027",
+			"name": "feltrini",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "c126a278-290a-4ff8-9b72-063b3be23fe5",
+			"name": "fesa di tacchino",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "d961f35f-e7cc-43a7-a54d-557f68bc094f",
+			"name": "Fette Biscottate",
+			"description": "Le cereali",
+			"shopName": "A&O",
+			"zoneName": "Panificati"
+		},
+		{
+			"id": "895eaf0d-065b-498d-8ef8-d45ad38f5245",
+			"name": "Fette Biscottate Marco",
+			"description": "Granfetta SanSepolcro",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "243c14bb-3041-4735-ae98-fc79e5860a88",
+			"name": "Fette Biscottate Tonde",
+			"description": "Buitoni Geanfetta",
+			"shopName": "A&O",
+			"zoneName": "corsia 1"
+		},
+		{
+			"id": "a2aced4d-fcb2-4890-8a1b-08c2d059d06f",
+			"name": "fette Buitoni",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "74d90be1-0a48-446a-84e8-24600c94bedc",
+			"name": "finish",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "390a8187-5089-46c8-aee3-69b71f74ec09",
+			"name": "Finish",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "25e5a310-fd64-49fd-9a65-8b2320386164",
+			"name": "finocchio",
+			"description": "",
+			"shopName": "ferula",
+			"zoneName": ""
+		},
+		{
+			"id": "ad42fb81-0d43-42df-9db1-157d462e6d46",
+			"name": "fiocchi regalo",
+			"description": "",
+			"shopName": "Brico",
+			"zoneName": ""
+		},
+		{
+			"id": "6d0b2cd5-0322-4a50-82ff-03488db89eac",
+			"name": "flauti",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "b6f0f3d0-4b3b-44a9-8bef-d7745e7eaf79",
+			"name": "focaccelle",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "42398dcd-1241-40a2-94c1-c773fb71525e",
+			"name": "focaccia",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "e82bd6a8-7374-4591-a7a3-fc0becb5e3b5",
+			"name": "focaccia pomodoro",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "3be3f1a4-a76c-4fa6-83f9-d7a0894444ad",
+			"name": "formaggio paglia",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "fbe1a72a-3941-4e0f-9c67-dad3c950626a",
+			"name": "fragole ferula",
+			"description": "",
+			"shopName": "Ferula",
+			"zoneName": ""
+		},
+		{
+			"id": "1e791176-6387-4cf0-bdf6-794b3f505ad3",
+			"name": "fresh & clean",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "1d71b60b-d73a-447d-bb31-84b6ddc00764",
+			"name": "frico",
+			"description": "",
+			"shopName": "Regolin",
+			"zoneName": ""
+		},
+		{
+			"id": "990bb862-0bde-4573-8416-fae843742328",
+			"name": "frico giant",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "ef279596-305d-445b-8129-702bb42e7492",
+			"name": "fritole",
+			"description": "",
+			"shopName": "Bosio",
+			"zoneName": ""
+		},
+		{
+			"id": "a76ab622-6ae9-4589-8620-284b2cd53ec9",
+			"name": "frittatina",
+			"description": "per brodo",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "641e28e2-9485-4b6f-ae21-6f53bbf4a98d",
+			"name": "funghi",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "c91678de-5680-4ca8-868a-42caf655f0ca",
+			"name": "funghi champignon",
+			"description": "300 gr",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "bfa26efc-0636-4aaa-9bbb-f1c8012a0f8e",
+			"name": "fusilli",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "c87579ce-f58c-4483-a30e-28a356d24126",
+			"name": "Galletti",
+			"description": "mulino",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "060d189a-8d38-487d-9c7a-147e5729eddc",
+			"name": "Gamberetti",
+			"description": "al naturale Zarotti",
+			"shopName": "A&O",
+			"zoneName": "corsia 3"
+		},
+		{
+			"id": "62254208-ddb8-470f-9d79-c87c73af8ad5",
+			"name": "garza",
+			"description": "",
+			"shopName": "Farmacia",
+			"zoneName": ""
+		},
+		{
+			"id": "6ef3945e-eb1a-4dd7-9f2d-cd5397e42def",
+			"name": "Gelatini mini assortiti",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": "freezer"
+		},
+		{
+			"id": "9475fa8d-7502-4521-b00d-1ad1e24fe86b",
+			"name": "gelato",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "8733af31-890b-4a53-a7a2-1dec122ff601",
+			"name": "gelato ringo",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "d81507ce-7ea5-4d2a-a8be-3f6bf3e67773",
+			"name": "gillette",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "629ccb7e-f96d-4e57-b875-de4ea84be70b",
+			"name": "gingerino",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "62c025d4-c1fb-4715-b6dd-0a9c18efcc75",
+			"name": "gnocchetti sardi",
+			"description": "Barilla ",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "a81b9e35-e290-43a9-b555-6705e8b48bd8",
+			"name": "Gocciole",
+			"description": "Confezione bianca",
+			"shopName": "A&O",
+			"zoneName": "corsia 2"
+		},
+		{
+			"id": "2df3ccd7-68a3-4fca-919d-8457ab117452",
+			"name": "Gocciole scure",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "7f5d03e8-7b76-4e87-88b1-a706ac748908",
+			"name": "gomme E",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "fbba3177-26e9-4f64-bc2f-26b3cb98cc54",
+			"name": "gomme s",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "aa422c4b-66a0-499e-baf4-33d7553f28ca",
+			"name": "gorgonzola",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "69469813-c726-419a-97c6-bef83a8d980a",
+			"name": "gorgonzola mascarponato",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "2f77359c-367f-4afe-96f4-8efbd1023ff4",
+			"name": "Gran Saraceno Galbusera",
+			"description": "integrale con grano saraceno e gocce di cioccolato ",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "4418d0bf-b84e-4d44-a949-8d2546ec3b6e",
+			"name": "grana",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "43172865-494d-4b3e-8e19-5077c2cb6d4b",
+			"name": "Grissini al sesamo",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": "corsia 3"
+		},
+		{
+			"id": "5e2ba24c-b33f-4bfd-8343-2096f11b14f3",
+			"name": "guanti",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "bfed6cf8-86e1-4a51-a6cf-057678416b52",
+			"name": "guarnizione moka 6",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "b04321ab-9343-44b2-a015-0472c7d3322f",
+			"name": "hamburger",
+			"description": "",
+			"shopName": "Regolin",
+			"zoneName": ""
+		},
+		{
+			"id": "66024968-5557-4628-82a5-ae08117e8b9d",
+			"name": "hamburgerini",
+			"description": "Teneroni Casamodena",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "b025c822-51ad-4457-8a55-9829faed1e04",
+			"name": "immuniflor urto",
+			"description": "30 capsule",
+			"shopName": "parafarmacia",
+			"zoneName": ""
+		},
+		{
+			"id": "ec2d1b65-0c3e-4a6a-902c-72f291f7466c",
+			"name": "impanata",
+			"description": "",
+			"shopName": "Regolin",
+			"zoneName": ""
+		},
+		{
+			"id": "50656179-31ff-4996-8b68-7cfbf964ca1f",
+			"name": "insalata",
+			"description": "",
+			"shopName": "Siciliano",
+			"zoneName": ""
+		},
+		{
+			"id": "55e762ab-a0b4-4dfd-a37f-24a207197a3d",
+			"name": "insalata croccante",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "cce1681b-a9c8-4837-8045-b0e9630340e8",
+			"name": "insalatina",
+			"description": "",
+			"shopName": "Ferula",
+			"zoneName": ""
+		},
+		{
+			"id": "a4434e97-ab20-4af3-a0a5-e63ff1a5cfa2",
+			"name": "karkade",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "031c8d7e-9b28-4cfa-93fc-1f5a00184a8c",
+			"name": "ketchup L",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "b471bd34-a50f-42ae-b3b2-7581340457d0",
+			"name": "ketchup s",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "8d6f667b-5978-4ae5-ae91-bd023146945f",
+			"name": "Kinder Barrett",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "beeaf041-a01c-4f6b-a4f1-de673211f4ec",
+			"name": "Kinder Brioss",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "f1bb0da6-8d77-4ace-8c1e-3aaf93b61fb2",
+			"name": "kiwi",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "a118e515-adc2-412c-9afa-39ae2c784bb1",
+			"name": "krumiri",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "4772b404-8c80-418d-8fa5-4290d49d6f09",
+			"name": "lacca",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "32b0a029-e36d-4198-a084-e8ed0f43ee42",
+			"name": "lamette barba",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "9126d59f-5922-41e6-8f29-4f1951975e0b",
+			"name": "lamponi",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "c6a2a9d3-41de-4da0-874c-d16854cec0cf",
+			"name": "lardo",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "094cc896-c817-413f-b61b-9f129610383e",
+			"name": "latte detergente nivea",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "6d3d1e58-7411-491a-9bc2-d1d4f4840b4f",
+			"name": "latte di soia",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "17f4144f-61f6-40fe-ba21-6003dee3e3b0",
+			"name": "Latte Zymil",
+			"description": "tappo arancione, cassa da 6",
+			"shopName": "A&O",
+			"zoneName": "corsia 1"
+		},
+		{
+			"id": "d4dfe0c3-0bc2-429c-9b91-eaee8b374449",
+			"name": "latte zymil",
+			"description": "tappo verde (conf da 6)",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "1f32243e-286c-42e0-8fdf-38e3e0392c8f",
+			"name": "latte zymil piccolo",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "90ed33c2-418e-4001-aab3-06d340ce91ed",
+			"name": "lenticchie",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "273e655f-2099-47b7-87a9-92561d64f94c",
+			"name": "lievito",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "181a2611-5919-4b40-ac24-8253549b587f",
+			"name": "limoni",
+			"description": "",
+			"shopName": "Siciliano",
+			"zoneName": ""
+		},
+		{
+			"id": "749ef54c-0109-40bc-b5ac-1d5d04da184c",
+			"name": "linguine Barilla",
+			"description": "n.13",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "e6917909-ee1e-4062-ae5b-9ebdf1daf0b2",
+			"name": "lisoform",
+			"description": "azione bagno gel",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "4928fb6b-f5d9-4342-9b1a-04a857c851db",
+			"name": "lisoform spray",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "3170c5f9-99ec-4edd-a341-4480d388a706",
+			"name": "lonza",
+			"description": "",
+			"shopName": "Regolin",
+			"zoneName": ""
+		},
+		{
+			"id": "8fff2a53-eb6f-4b6d-86c9-42ff37195c01",
+			"name": "lotus",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "d8fb9a74-c3a4-4cd3-b678-32f15c664e5f",
+			"name": "lubjanska",
+			"description": "",
+			"shopName": "Regolin",
+			"zoneName": ""
+		},
+		{
+			"id": "1c9c23d2-c239-49d8-93b7-d4ee362db57d",
+			"name": "macinata",
+			"description": "",
+			"shopName": "Regolin",
+			"zoneName": ""
+		},
+		{
+			"id": "08205b00-9f5d-443f-a0b9-f10a0bd0b61a",
+			"name": "macine",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "38a274e6-7323-4bd8-9455-4bb57b8c7ff3",
+			"name": "maionese",
+			"description": "Calvè classica",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "c5774f52-49a5-44c6-8e62-64758574758c",
+			"name": "Mais",
+			"description": "Bonduelle confezione da 3 ",
+			"shopName": "A&O",
+			"zoneName": "corsia 3"
+		},
+		{
+			"id": "16a6183c-c451-4d9a-8b9d-55c13da1f160",
+			"name": "malga",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "b3884ca4-669f-4d8a-bb35-b5bd853a4155",
+			"name": "mandorle",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "f2a808a6-6395-4d78-9bb7-ab2f7b2ec635",
+			"name": "marmellata albicocche",
+			"description": "",
+			"shopName": "Ferula",
+			"zoneName": ""
+		},
+		{
+			"id": "169854e4-e521-43ca-bf4e-8e63f76233b5",
+			"name": "marmellata arance",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "714cd682-740b-4da4-8097-ea039c60151b",
+			"name": "marmellata fragole",
+			"description": "",
+			"shopName": "Ferula",
+			"zoneName": ""
+		},
+		{
+			"id": "59530256-3168-4a56-98aa-b8a7941c570e",
+			"name": "marmellata mela",
+			"description": "",
+			"shopName": "Ferula",
+			"zoneName": ""
+		},
+		{
+			"id": "0f82df2d-c9f1-4393-9542-8304a560bd5a",
+			"name": "marmellata prugne",
+			"description": "",
+			"shopName": "Ferula",
+			"zoneName": ""
+		},
+		{
+			"id": "fb2e2e86-08f7-4273-9e9c-f35b53c54de4",
+			"name": "marrone glacé",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "978df9f4-a888-4cc9-990a-d7f8e6666763",
+			"name": "mars",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "0d3529c4-a744-4a46-8542-6740e7cf0a72",
+			"name": "marzapane",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "68e63455-af5b-4578-93a8-2b8247daa4d2",
+			"name": "mascarpone",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "2796b87c-a821-49a5-bebb-af13e9b9e39e",
+			"name": "mascherina",
+			"description": "",
+			"shopName": "farmacia",
+			"zoneName": ""
+		},
+		{
+			"id": "bfeb62e1-3a50-44c3-9ec7-6a180439e498",
+			"name": "mascherine",
+			"description": "ffp 2",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "4b0d6e20-fa90-4540-83ee-4a9860ac2b39",
+			"name": "mela",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "f7c9890e-1912-40ba-9f13-d3177feb3624",
+			"name": "mela vasetto",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "09a43539-dfac-46dd-81b3-cc306cc44123",
+			"name": "melanzane",
+			"description": "",
+			"shopName": "Ferula",
+			"zoneName": ""
+		},
+		{
+			"id": "5e914d6e-ae32-4a0f-9f19-393e51b2d1d7",
+			"name": "mele",
+			"description": "",
+			"shopName": "Siciliano",
+			"zoneName": ""
+		},
+		{
+			"id": "ff41ec51-8862-47bc-9af9-e92c46ce86a0",
+			"name": "Melone",
+			"description": "",
+			"shopName": "Siciliano",
+			"zoneName": ""
+		},
+		{
+			"id": "9f578d64-7695-4603-84f2-adaade327485",
+			"name": "menta",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "9b933295-bcf5-43b3-b11e-7f5579d5733c",
+			"name": "merendine",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "51025d8d-085d-4989-a1e3-2dc2fab99546",
+			"name": "merlot",
+			"description": "",
+			"shopName": "Ferula",
+			"zoneName": ""
+		},
+		{
+			"id": "afee5f3a-740a-4a7a-9258-665566bf7da8",
+			"name": "Mezze Penne Rummo",
+			"description": "n.28",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "088e7ce8-e514-4852-89db-bf6540465d95",
+			"name": "miele",
+			"description": "fiori laguna",
+			"shopName": "Ferula",
+			"zoneName": ""
+		},
+		{
+			"id": "200ae1de-f0a5-4670-a7e6-52331a46bd79",
+			"name": "miele spremibile",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "da53e7b9-bf26-4142-bfa6-fe9159c05227",
+			"name": "mikado",
+			"description": "cioccolato fondente ",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "84d1a088-fb1d-4336-bf20-c39ce24f8405",
+			"name": "minestrone",
+			"description": "",
+			"shopName": "Ferula",
+			"zoneName": ""
+		},
+		{
+			"id": "0633aaba-7947-411d-84a8-c28a1d2ab8a7",
+			"name": "mmm",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "e24fd4d8-b31d-4107-924b-4b3039ef017b",
+			"name": "mocio",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "92ad4e39-6380-405b-a3c8-6f5c0d0e05e7",
+			"name": "Montasio",
+			"description": "1\/2 kg",
+			"shopName": "A&O",
+			"zoneName": "salumi"
+		},
+		{
+			"id": "6b5d4f32-f820-4444-b746-a0eb97c179a7",
+			"name": "Mortadella",
+			"description": "",
+			"shopName": "Regolin",
+			"zoneName": ""
+		},
+		{
+			"id": "07be12ac-db34-40e2-9f14-80049c0cdb4c",
+			"name": "mou mou",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "78d6a7ed-ebf9-47b6-8987-265b79fae7a9",
+			"name": "mozzarella",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "72b87045-6ed4-49cc-8e2f-7d123895572d",
+			"name": "mozzarella s",
+			"description": "",
+			"shopName": "Siciliano",
+			"zoneName": ""
+		},
+		{
+			"id": "4162ad73-144e-48f8-802e-27f1a0bd9cee",
+			"name": "Mozzarelline",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "6d42888e-ce4e-4352-b766-45185baf31df",
+			"name": "musetto",
+			"description": "",
+			"shopName": "Regolin",
+			"zoneName": ""
+		},
+		{
+			"id": "8b12afc2-e1e9-4250-acbe-f5a742ea38c3",
+			"name": "naggy",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "5f10e55d-17b6-4d31-9cd8-a45c20b0f07f",
+			"name": "nesquik",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "a7bf6623-6605-4387-a64a-4472fc8a4e7f",
+			"name": "nocciolaia bicolore",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "da8bd5c4-64bb-4b80-96b5-b43d9439d240",
+			"name": "nocciolata",
+			"description": "Rigoni di Asiago",
+			"shopName": "A&O",
+			"zoneName": "zona casse"
+		},
+		{
+			"id": "f139bf38-bcb2-424f-8c47-8acaf961f992",
+			"name": "noodle curry",
+			"description": "Maggi",
+			"shopName": "A&O",
+			"zoneName": "corsia 3"
+		},
+		{
+			"id": "41661868-6cdd-45db-926f-45301047607e",
+			"name": "noodle pollo",
+			"description": "Maggi",
+			"shopName": "A&O",
+			"zoneName": "corsia 3"
+		},
+		{
+			"id": "469fd127-443d-4ccc-a077-5060006eceb3",
+			"name": "nugghy",
+			"description": "Aia snack",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "a6ec26f3-021b-49a3-b4ff-14e7dfdc599f",
+			"name": "Nutella",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "358e6f6b-8ae9-4161-870b-9d25dbd9da12",
+			"name": "Olietto capelli",
+			"description": "",
+			"shopName": "parrucchiere",
+			"zoneName": ""
+		},
+		{
+			"id": "1247721b-32c6-45fe-ac55-43b44b6b4eed",
+			"name": "olife",
+			"description": "",
+			"shopName": "Ferula",
+			"zoneName": ""
+		},
+		{
+			"id": "09e4315b-6ec4-4c8e-9c14-a80c057e6390",
+			"name": "Olife",
+			"description": "",
+			"shopName": "Ferula",
+			"zoneName": ""
+		},
+		{
+			"id": "b101f5dd-5806-4e25-8c88-06a5bc0f3f8d",
+			"name": "olio",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "7172e151-e741-4029-a97c-9a466940d68c",
+			"name": "olio buono",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "3f007a83-330e-497c-9545-f67995eb1248",
+			"name": "olive nere",
+			"description": "IPOSEA olive leccino denocciolate ",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "92e15783-46d8-40b8-99f8-b6b3b95fab40",
+			"name": "olive verdi",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "2abf3a47-6fe1-4d01-9f0a-1927db7901cb",
+			"name": "ombretto blu",
+			"description": "",
+			"shopName": "blusirene",
+			"zoneName": ""
+		},
+		{
+			"id": "fc6341cf-0346-4e56-8c14-a929e7981fcf",
+			"name": "omniskin",
+			"description": "",
+			"shopName": "Farmacia",
+			"zoneName": ""
+		},
+		{
+			"id": "f42618c6-12b8-4323-ae07-d798eaf63131",
+			"name": "orate",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "c0738161-75e1-4c5f-bb09-7c7617835117",
+			"name": "orecchiette",
+			"description": "Barilla 500g",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "290e9157-4d0d-4afe-8b36-e427d97c986c",
+			"name": "oro saiwa cereali",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "8f0bbe32-f5bf-45b9-98f4-ac80316eba60",
+			"name": "padellino piccola",
+			"description": "x crepes",
+			"shopName": "sme",
+			"zoneName": ""
+		},
+		{
+			"id": "d36e418c-2c96-471b-8e8d-f47917b16fe7",
+			"name": "paglia fieno",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "454edce1-7847-4be1-a294-e96031f1ca1b",
+			"name": "palline",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "c10031e3-eac4-4da8-aa47-8c01fb9e8eed",
+			"name": "Pan bauletto",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "212a6b46-e926-4a10-ad73-43a0a492d37f",
+			"name": "pan carrè",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "182dbc30-df07-4939-8c38-af397ec6b061",
+			"name": "Pan di stelle",
+			"description": "biscotti",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "191a3b9c-e2c7-4e4f-9fa8-9480d9c02426",
+			"name": "Pan di stelle nocciolata",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "6cbebf0b-9b04-43f2-bebf-597ca8fbd121",
+			"name": "pan goccioli",
+			"description": "mulino bianco conf. 8",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "8a4f3a32-9e50-4f4f-ad22-860500b481d5",
+			"name": "Pan Piuma",
+			"description": "Confezione blu e rossa",
+			"shopName": "A&O",
+			"zoneName": "Panificati"
+		},
+		{
+			"id": "63a4829b-8756-4437-90a6-f2f0214d8afb",
+			"name": "pancakes",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "2b6ea5b8-6058-4198-90a5-b33654d79e24",
+			"name": "pancetta",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "e70befea-30d5-4039-82fd-5e4bb2b844df",
+			"name": "pancetta affumicata",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "7dcfb30d-511f-4a04-98b7-554809c73703",
+			"name": "pandoro",
+			"description": "tre marie",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "14b48b1e-a52d-4ee8-b870-5e0c18d7044c",
+			"name": "pane",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "bfc7d9b9-1062-44af-9e7f-dc9ab00a96b7",
+			"name": "pane bosio",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "2abd7bc2-1980-440b-ba0c-3b5e2c1c7052",
+			"name": "pane cereali",
+			"description": "Mulino Bianco",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "8911ab59-6f68-4d2a-a6a2-201ad1f95d45",
+			"name": "pane filone",
+			"description": "",
+			"shopName": "Maritani",
+			"zoneName": ""
+		},
+		{
+			"id": "ed4adb89-48e6-46f7-83ae-00784414d53f",
+			"name": "pane hqmburger",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "30aa1187-6cb1-4eba-bc08-c3a40d0ab8d1",
+			"name": "pane kamut",
+			"description": "",
+			"shopName": "Bosio",
+			"zoneName": ""
+		},
+		{
+			"id": "c7f6a70f-e6ae-4df1-8d1e-66d31a13d7f9",
+			"name": "pane morbido",
+			"description": "Pan piuma confezione blu e rossa",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "2961e310-a905-449f-8161-a884c3658905",
+			"name": "pane nero",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "85c126ec-fbe4-4641-93cf-0f77ff6de2cc",
+			"name": "pane toast",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "1a33efc3-683d-4117-9a19-1c4dd4513b86",
+			"name": "panettone",
+			"description": "tre marie",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "86918911-6338-40e3-b4d3-17c41f2168de",
+			"name": "pangrattato",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "2467585a-f5f4-4569-a521-26c8b10365c1",
+			"name": "pangri",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "baa806ae-1259-4397-8ec2-71c13063732d",
+			"name": "panini hamburger",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "010857cb-a761-4af3-8bab-2645026f707e",
+			"name": "panini latte",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "c76bc0bf-d019-4c94-bb49-7488e07bad22",
+			"name": "Panna Chef",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": "corsia 1"
+		},
+		{
+			"id": "128a7585-0a1c-41ed-ba73-99b4aad1f558",
+			"name": "panna montata",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "a3952e27-b80f-4472-802b-553e95ba721b",
+			"name": "pannocchie",
+			"description": "biscotti mb",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "3ca02969-6774-4a54-88b2-f1366c605e87",
+			"name": "paprika",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "a23198f1-164e-459b-9050-e5281448acfd",
+			"name": "parmigiano",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "c97691fe-621b-483c-833a-12d51d984a18",
+			"name": "pasta gnocchi",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "9befb11f-e538-4d52-8ee0-db5818bcaa8b",
+			"name": "pasta sfoglia tonda selex",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "ce326250-33db-4c64-a080-dc290fd2f2ef",
+			"name": "patate",
+			"description": "",
+			"shopName": "Siciliano",
+			"zoneName": ""
+		},
+		{
+			"id": "b3821fd4-6602-438b-8673-161cdfc084fd",
+			"name": "patate congelatore",
+			"description": "MC cain",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "a4dacbf8-fc55-4cfd-94dc-5f66250afda5",
+			"name": "patatine",
+			"description": "Da sacchetto rustiche",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "cceb8edc-cee5-45df-b3eb-e8e4048885cb",
+			"name": "patatine congelate",
+			"description": "MC Cain",
+			"shopName": "A&O",
+			"zoneName": "surgelati"
+		},
+		{
+			"id": "eb70d3d7-5ab7-4884-8b34-451d739195c5",
+			"name": "pecorino",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "58f4994f-0828-474c-b8e1-c830111c8ab3",
+			"name": "pellicola",
+			"description": "domopack teasparente",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "95fdfdf0-9120-448b-92cc-0eeed86b6fd9",
+			"name": "pennette Rummo",
+			"description": "n.66",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "a9d95edc-d1d0-4471-b266-0802779ebdea",
+			"name": "pepe",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "5de05b60-d230-46ae-a4da-78c306a950f6",
+			"name": "peperone rosso",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "8f3c1d04-d1f1-4c46-ac70-c4a6f704d281",
+			"name": "perugine",
+			"description": "",
+			"shopName": "Regolin",
+			"zoneName": ""
+		},
+		{
+			"id": "2e249635-0d34-42d8-b13e-70376e9a0ef6",
+			"name": "pesce",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "945f91e9-b368-438c-b64d-601902d9cb2d",
+			"name": "pesce spada",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "f44b41f0-f179-4b54-a995-ac1ea10e3244",
+			"name": "pesto",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "7ee11df7-73de-4b4c-9e74-f4ad676725e5",
+			"name": "pesto funghi",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "2655c05d-3bed-41e9-838e-7fbe91b2094a",
+			"name": "petto pollo",
+			"description": "",
+			"shopName": "Regolin",
+			"zoneName": ""
+		},
+		{
+			"id": "09f91cf9-b95c-4240-bf0a-93571ae72ed8",
+			"name": "petto tacchino",
+			"description": "",
+			"shopName": "Regolin",
+			"zoneName": ""
+		},
+		{
+			"id": "dab5389a-4b90-4f03-88d4-9f574aec7ceb",
+			"name": "philadelphia",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "ca53a159-870d-489f-9b5e-1c706f802e95",
+			"name": "Piadina",
+			"description": "Piadina sfogliata C.R.M.",
+			"shopName": "A&O",
+			"zoneName": "Panificati"
+		},
+		{
+			"id": "8e2b9556-40f5-41a6-8101-7fec4ae8ed6b",
+			"name": "pinza",
+			"description": "",
+			"shopName": "Ronchi",
+			"zoneName": ""
+		},
+		{
+			"id": "a3d434ef-9512-44bc-b25b-051406db9738",
+			"name": "piselli",
+			"description": "findus",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "8ff68a65-4f56-405b-a674-2b9e2a1a33ac",
+			"name": "piselli",
+			"description": "",
+			"shopName": "Ferula",
+			"zoneName": ""
+		},
+		{
+			"id": "08ac5ee3-3505-4b51-90a7-52c5fe1563b1",
+			"name": "pistacchi",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "bf4bf2f2-7f9d-4658-8ce8-d981c009454f",
+			"name": "Pizza a fette margherita",
+			"description": "Zi Gennaro",
+			"shopName": "A&O",
+			"zoneName": "freezer"
+		},
+		{
+			"id": "8dc6389f-a41d-45d4-8a91-082c6c556f1b",
+			"name": "pizza alta",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "8607c388-f2a9-4b13-8a40-2da0cb51202e",
+			"name": "pizza fette",
+			"description": "Zi Gennaro",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "6e49c862-f276-4d52-b625-1e8af3051589",
+			"name": "Pizza Quadrata",
+			"description": "Italpizza margherita 26x38",
+			"shopName": "A&O",
+			"zoneName": "freezer"
+		},
+		{
+			"id": "201eb366-70ff-4688-b013-eb253e22fe99",
+			"name": "pizza quadrata",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "5bc0e7d6-d0ec-4b67-9832-0246e7ededa9",
+			"name": "Pizza Tonda",
+			"description": "Regina Cameo conf. Da 2",
+			"shopName": "A&O",
+			"zoneName": "freezer"
+		},
+		{
+			"id": "0ae6d989-4eb5-44d7-8d93-53ba4dbcf990",
+			"name": "Pizza Tonda Alta",
+			"description": "Regina Cameo conf. Da 1",
+			"shopName": "A&O",
+			"zoneName": "freezer"
+		},
+		{
+			"id": "647cf631-3a95-4072-aed2-e7f88237968d",
+			"name": "pizzette",
+			"description": "",
+			"shopName": "Bosio",
+			"zoneName": ""
+		},
+		{
+			"id": "4453d13c-a2ac-47cb-8af7-a0d32a489016",
+			"name": "plum cake",
+			"description": "mulino bianco",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "4ee7dca4-ad64-4d3b-b4c8-f4777ef2c066",
+			"name": "plumcake",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "4b50970f-9c98-49a2-bf6e-9a766cd840d4",
+			"name": "polenta",
+			"description": "gialla",
+			"shopName": "Regolin",
+			"zoneName": ""
+		},
+		{
+			"id": "4cdefda0-86c5-46b5-ab05-d2b209e35e7c",
+			"name": "Polpette saporite",
+			"description": "",
+			"shopName": "Regolin",
+			"zoneName": ""
+		},
+		{
+			"id": "27fe34bd-3111-424c-aed5-0e01879faba5",
+			"name": "polpettine",
+			"description": "",
+			"shopName": "Regolin",
+			"zoneName": ""
+		},
+		{
+			"id": "cc36936a-c1c0-4c49-af84-beb4e99cc140",
+			"name": "pomodori",
+			"description": "",
+			"shopName": "Siciliano",
+			"zoneName": ""
+		},
+		{
+			"id": "1746e1ea-1163-4f24-8309-97bd79d1392d",
+			"name": "pomodorini",
+			"description": "",
+			"shopName": "Siciliano",
+			"zoneName": ""
+		},
+		{
+			"id": "888bd731-d035-4c8c-8bb9-9255d70ea601",
+			"name": "pomodorini secchi",
+			"description": "vasetto Selex 280g",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "9b438261-ee2c-41d4-ad11-920fbbc6203f",
+			"name": "porchetta",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "5f6a48eb-de25-4376-923e-7a279964c25d",
+			"name": "porro",
+			"description": "",
+			"shopName": "Siciliano",
+			"zoneName": ""
+		},
+		{
+			"id": "3e0c928d-678d-4f84-a9d7-eb7d95790a7c",
+			"name": "preparato torta",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "842199de-f5b6-4928-9226-29393ab62c34",
+			"name": "prezzemolo",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "62572000-10d6-4d4d-b991-fdad207c4515",
+			"name": "Pringles",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "1ee55e90-8e1f-497e-b7c3-062f7595ad8d",
+			"name": "pringles",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "8b8a155e-6d34-4db8-a071-7dcc6154fbe5",
+			"name": "Prosciutto cotto",
+			"description": "etti Praga Senfter",
+			"shopName": "A&O",
+			"zoneName": "salumi"
+		},
+		{
+			"id": "9194b097-33e5-4d49-87d6-9b1fb4771c5b",
+			"name": "prugne",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "130e0509-3d66-4bdd-82e1-f2d27f5f445f",
+			"name": "pulsante Fornello",
+			"description": "",
+			"shopName": "bu",
+			"zoneName": ""
+		},
+		{
+			"id": "04edd500-1b71-4db1-95e0-f7f6f7cee832",
+			"name": "purè",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "f8671368-27a4-493e-8449-30cd16d7f647",
+			"name": "radicchio",
+			"description": "",
+			"shopName": "Ferula",
+			"zoneName": ""
+		},
+		{
+			"id": "2f9d880b-78fa-4697-9617-9076fa92658e",
+			"name": "radicchio rosso",
+			"description": "",
+			"shopName": "Ferula",
+			"zoneName": ""
+		},
+		{
+			"id": "17ea9b18-75f5-45e6-9a5f-c37dce9f0933",
+			"name": "ragu",
+			"description": "rana",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "deaab741-2557-4735-b7f7-4eb14bc4b645",
+			"name": "rasoio",
+			"description": "venus",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "1cb48e27-9abd-4ce0-bb28-b3b41352c725",
+			"name": "ravanelli",
+			"description": "",
+			"shopName": "Ferula",
+			"zoneName": ""
+		},
+		{
+			"id": "5c697396-203d-4c10-b6e7-ba50822a16ef",
+			"name": "ravioli",
+			"description": "rana immagine arrosto",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "5bc815db-7eaf-4bf4-9141-e7f7bcc20f28",
+			"name": "regalo Federico",
+			"description": "",
+			"shopName": "",
+			"zoneName": ""
+		},
+		{
+			"id": "916795ea-0e4e-4d7a-b05f-922f4550c21a",
+			"name": "regalo Gabriele",
+			"description": "",
+			"shopName": "Emisfero",
+			"zoneName": ""
+		},
+		{
+			"id": "090f48f5-e782-4649-834a-bbb4d5d0f60c",
+			"name": "regalo Monica",
+			"description": "",
+			"shopName": "",
+			"zoneName": ""
+		},
+		{
+			"id": "7fb9dc62-b2ee-47cc-a243-60673fc39aa8",
+			"name": "ribes",
+			"description": "",
+			"shopName": "parafarmacia",
+			"zoneName": ""
+		},
+		{
+			"id": "2ddc6b8d-b1cc-4842-a40a-724b3be8d5bd",
+			"name": "ric cel",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "16425f32-f30b-4dff-a5bf-32646f4e6c88",
+			"name": "Ric cel iliad",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "7baa6f4c-1228-4ca7-aba6-11b05f302596",
+			"name": "Ricambi spazzolini elettrici",
+			"description": "setole morbide",
+			"shopName": "Emisfero",
+			"zoneName": ""
+		},
+		{
+			"id": "b41cb955-a22f-47d6-a454-57bcbfc08403",
+			"name": "ricambi spazzolini manuali",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "ed23dc80-2c76-4f9b-8267-f12741e518ef",
+			"name": "ricarica iliad",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "32e62a23-252c-4bbb-9a30-303d5b97fafc",
+			"name": "ricarica vodafone",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "f2a4755f-b22a-4c07-8743-4f639dbf7cae",
+			"name": "ricotta affumicata",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "a9d1b58b-044a-4b9c-9c8d-8bb886feba57",
+			"name": "ricottini",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "e7de41be-1a37-4250-90eb-88b34b3ba6cd",
+			"name": "rimmel",
+			"description": "",
+			"shopName": "blusirene",
+			"zoneName": ""
+		},
+		{
+			"id": "cd6d7759-2318-4cb3-aa55-c544ddabf867",
+			"name": "risma di carta",
+			"description": "",
+			"shopName": "cartoleria",
+			"zoneName": ""
+		},
+		{
+			"id": "af535458-41e5-4d94-8c18-9683f4ea829a",
+			"name": "riso",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "58e85493-404f-4ccb-8dcf-6340756a4133",
+			"name": "riso f",
+			"description": "",
+			"shopName": "Ferula",
+			"zoneName": ""
+		},
+		{
+			"id": "a422bb82-e385-40df-974b-a41f475648b7",
+			"name": "rosmarino",
+			"description": "vaschette bustinate",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "7f43ab07-489f-4866-b600-290717ecbe13",
+			"name": "sacchetti grandi",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "76f5bd1c-cd86-4b15-bec3-4de9dac047df",
+			"name": "sacchetti piccoli ",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "019c744d-7c90-424e-af94-2ae2577a781e",
+			"name": "sacchi aspirapolvere",
+			"description": "pure epa microfiber bag h81",
+			"shopName": "bu",
+			"zoneName": ""
+		},
+		{
+			"id": "5e4994e3-5f30-4df6-8f73-b3c38f1eac2f",
+			"name": "sacchi x plastica",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "12ae4605-40ea-45ce-a18a-f8a498aea870",
+			"name": "Saiwa cruscoro",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "9ea4fd12-b6b1-46bd-9678-503d0db1453c",
+			"name": "sale fino",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "04fdb40e-97ee-45e1-a89c-1aa08c6ad2ad",
+			"name": "sale grosso",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "c9b4a46d-01fe-4487-83c3-99f81735fd3b",
+			"name": "salmone",
+			"description": "al limone rio mare",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "aebc788c-afca-4254-9fba-2a67f14bd1b4",
+			"name": "salmone",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "0f0c7052-9c3f-4472-8dfa-8265f0071853",
+			"name": "Salmone",
+			"description": "Al naturale Rio Mare",
+			"shopName": "A&O",
+			"zoneName": "corsia 3"
+		},
+		{
+			"id": "757e7a78-c300-4aad-bf6f-dd47b73c155b",
+			"name": "salsa ",
+			"description": "petti il delicato",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "d866554e-a8ee-46b0-bdd9-aaa8965d7c3c",
+			"name": "salsa bruschette",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "9a6a89d9-1820-4cf9-b6b5-e14ac8e360ff",
+			"name": "salsa Le conserve della nonna",
+			"description": "sugo al pomodoro fresco",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "76ae810a-af18-48bb-91a9-71ba5b1458e9",
+			"name": "salsa mutti",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "a85067e3-b6e1-4b6d-8fb3-d1768eca143d",
+			"name": "salsiccia",
+			"description": "",
+			"shopName": "Regolin",
+			"zoneName": ""
+		},
+		{
+			"id": "bc593f39-4d4f-42b7-9884-ebf81232e66a",
+			"name": "salvaslip",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "a28cb37a-6083-4ee5-8261-f585c4100983",
+			"name": "salvia",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "723460dc-5e17-4662-932e-e616c2f852a3",
+			"name": "salviette",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "806b9fbd-2997-4850-9ba8-df3b5c07afdd",
+			"name": "salviette disinfettanti",
+			"description": "",
+			"shopName": "farmacia",
+			"zoneName": ""
+		},
+		{
+			"id": "e24f2540-bf6a-4a3a-851f-d459ab1be001",
+			"name": "salviette mani viaggio",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "91c29729-3046-4e1e-b414-c516c6dcd11e",
+			"name": "salviette pampers",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "5a70de2c-17e6-4396-b4d0-a489f5f5bd0a",
+			"name": "Sapone Liquido Mani",
+			"description": "Spuma di sciampagna.  Marrone",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "c989c6e9-c99c-4bda-a28c-6b26a6b5bcf6",
+			"name": "sapone liquido mani blu",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "6b62d181-ed57-4ee6-938e-96556849818f",
+			"name": "saponetta",
+			"description": "spuma di champagna",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "85563298-d955-4aaf-8928-472f48f588ea",
+			"name": "saugella",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "69b8c35b-05cc-48b0-9c5e-20e35115c8b4",
+			"name": "saugella girl",
+			"description": "",
+			"shopName": "Farmacia",
+			"zoneName": ""
+		},
+		{
+			"id": "b12b3017-2ded-4649-9d27-867c7b42eff6",
+			"name": "saugella piccola",
+			"description": "",
+			"shopName": "farmacia",
+			"zoneName": ""
+		},
+		{
+			"id": "eab7481a-7686-47be-957a-451d0e139754",
+			"name": "savoiardi",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "d2f200ed-cf5b-4f60-acab-8cf38829c6b3",
+			"name": "scarpe Sabrina",
+			"description": "",
+			"shopName": "bu",
+			"zoneName": ""
+		},
+		{
+			"id": "fab19420-6776-435f-8b58-c1afca157be2",
+			"name": "scatole plastica vestiti",
+			"description": "",
+			"shopName": "",
+			"zoneName": ""
+		},
+		{
+			"id": "ee3d3d72-0117-4536-bc28-d839e0969046",
+			"name": "schiuma da barba ",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "c32e31fd-1437-4dbd-81c9-f3e6770c2ac1",
+			"name": "Scottex",
+			"description": "Asciugatutto maxi conf. Da 2",
+			"shopName": "A&O",
+			"zoneName": "corsia 4"
+		},
+		{
+			"id": "3a3d98c3-8838-4c32-bc61-24e3fdcc5afc",
+			"name": "sedano",
+			"description": "",
+			"shopName": "Ferula",
+			"zoneName": ""
+		},
+		{
+			"id": "499bd50e-77f1-4229-bdb4-4310b9374756",
+			"name": "sedano",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "5eed0d84-6f80-4cb8-ba5e-730d88b9f3d2",
+			"name": "senape",
+			"description": "orco",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "0f1072a9-9a5c-4f77-aa5d-e6f12316d7d0",
+			"name": "settimana enigmistica",
+			"description": "",
+			"shopName": "tabaccheria",
+			"zoneName": ""
+		},
+		{
+			"id": "8d05fb7e-b52b-4b01-bf99-f13ccac0a403",
+			"name": "sgombro",
+			"description": "Rio mare",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "93cbf825-3a08-41fe-b238-381ed78ccbd4",
+			"name": "sgorgante",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "407fbb24-9e71-44dd-8560-952e7869bf6e",
+			"name": "Sgranocchi",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": "corsia 3"
+		},
+		{
+			"id": "79f168cf-c150-4b6c-a7f6-031ba3476dd0",
+			"name": "shampoo ",
+			"description": "head and shoulders",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "f5ad19a5-21fc-48aa-92af-62cfb3f6ecee",
+			"name": "shampoo argilla",
+			"description": "",
+			"shopName": "parafarmacia",
+			"zoneName": ""
+		},
+		{
+			"id": "9eb1bacf-0929-4cdf-8d69-7f1c42ccfaad",
+			"name": "shampoo marco",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "c9f341b6-d6ae-4917-bd53-c03b4c0249f6",
+			"name": "shampoo parrucchiere",
+			"description": "",
+			"shopName": "parrucchiere",
+			"zoneName": ""
+		},
+		{
+			"id": "26ca6246-05db-4aaf-bf61-247ba96cd8aa",
+			"name": "Simmenthal",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "ba5faf4d-22db-46a1-95f6-baffcf1220df",
+			"name": "smiley",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "b8972866-85aa-4a90-8988-9f3a7af61576",
+			"name": "Snack cereali",
+			"description": "gran cereali m.bianco, meglio se misura",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "e58a4609-6161-4917-8a58-1015feb61241",
+			"name": "sottilette",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "458212f7-4dc7-4e1b-aeaa-eebbbf31197c",
+			"name": "sottilette scamorza",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "395cd3c6-f05f-4a23-87c4-601e04809249",
+			"name": "spaghetti Barilla",
+			"description": "n.5",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "e7427849-537f-4261-b80f-5f30b34a50f9",
+			"name": "spaghetti de cecco 12",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "dce8fb90-2b29-4f11-bd1b-b0922a98bf4a",
+			"name": "spaghetti voiello 104",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "dd7a1250-c488-42b0-9c47-f5b48a77f86b",
+			"name": "spazzolino",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "dc08ec4d-3e04-4dee-9b98-2a07a4c71db7",
+			"name": "speck",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "c5f9f88c-0689-4aad-81c3-3e2f34e9ce06",
+			"name": "Speck",
+			"description": "cubetti",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "1544480d-fcf7-46f1-baa0-54e9f9635ed3",
+			"name": "speck r",
+			"description": "",
+			"shopName": "Regolin",
+			"zoneName": ""
+		},
+		{
+			"id": "71abb277-0ac1-4e20-88fe-a09704a85b2e",
+			"name": "Speedy pollo",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "316712af-a8fc-486e-8958-5f0843b6cb9b",
+			"name": "spiedini",
+			"description": "",
+			"shopName": "Regolin",
+			"zoneName": ""
+		},
+		{
+			"id": "318b2758-4428-4031-9aa8-fe5f89b2be1a",
+			"name": "spinaci",
+			"description": "surgelati selex",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "7476ad47-e884-45bb-8265-8059676e9e23",
+			"name": "spremuta arancia",
+			"description": "Sterilgarda 200ml conf da 3 ",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "cb7ecbf1-28b5-49cb-ac2e-8f643d3c15c3",
+			"name": "spugnetta morbide",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "20577e38-bab8-4fdb-9e9b-a361d1f1f143",
+			"name": "spugnette bimateriale",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "43588597-750e-4c9f-97cc-cba5b2cad663",
+			"name": "spumante",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "aba3f938-e9c6-477e-8e9b-3f2e6993c37b",
+			"name": "stelline all'uovo",
+			"description": "Barilla Emiliane conf. gialla",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "a1f62c7a-8a60-497a-b9c2-cdc989f398e9",
+			"name": "stracchino",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "1ce3f1a4-d26f-41ef-a901-562ba85f005b",
+			"name": "stracchino ferula",
+			"description": "",
+			"shopName": "Ferula",
+			"zoneName": ""
+		},
+		{
+			"id": "6032b811-3876-4de8-b8b3-2edfa60aed65",
+			"name": "struccante",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "306fd4af-9cdb-4351-b30f-f54621946a9f",
+			"name": "strudel",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "474c4460-3500-4a0b-8330-b9f9711f3e9b",
+			"name": "succo mela",
+			"description": "",
+			"shopName": "Ferula",
+			"zoneName": ""
+		},
+		{
+			"id": "f646a404-2e8c-48c5-a33d-a6aa122ae656",
+			"name": "sugo con polpettine",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "c3d5e810-f779-4551-86b6-4e5ae41cfce6",
+			"name": "suoletta",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "28f3ec8c-ab1e-4ded-8e36-70005a1f42c7",
+			"name": "Tachipirina",
+			"description": "",
+			"shopName": "Farmacia",
+			"zoneName": ""
+		},
+		{
+			"id": "e5eb8a20-4d63-4c10-a9b9-75ab605b59c4",
+			"name": "tagliatelle",
+			"description": "Sfogliagrezza Rana",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "54ac64d8-5748-4076-b22f-7e08417a31d9",
+			"name": "taralli",
+			"description": "",
+			"shopName": "Siciliano",
+			"zoneName": ""
+		},
+		{
+			"id": "8c6fd37b-e2cf-4842-8340-1f8d1bb2de92",
+			"name": "te",
+			"description": "",
+			"shopName": "Coop duino",
+			"zoneName": ""
+		},
+		{
+			"id": "ad1ce55e-cfd5-444e-9e3a-187e144f76fb",
+			"name": "Te alla pesca",
+			"description": "San Benedetto (conf da 6)",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "4c9fcd57-b142-45e3-b336-538edd19a21d",
+			"name": "te gelsomino",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "bc9669f8-5f59-40e9-bf9b-885b2a923e4b",
+			"name": "te pesca",
+			"description": "San Benedetto",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "61cb14fb-b00c-458c-92be-e9857078e4e9",
+			"name": "te Pompadour mirtillo vaniglia",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "0339c95e-1322-4f72-9f70-39920c2673e4",
+			"name": "te verde",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "34c928db-7acb-493a-90ea-ddf95452ac4a",
+			"name": "teglia grande",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "19ea126c-3012-42bc-8584-da57f2d02270",
+			"name": "teglia media",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "a2d936aa-4bcc-4bcc-b12d-6d65e791b50f",
+			"name": "teglie piccola",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "3384a709-a9b7-4797-82e3-929e55d434dd",
+			"name": "tegoline",
+			"description": "",
+			"shopName": "ferula",
+			"zoneName": ""
+		},
+		{
+			"id": "cc92c862-53f2-4e53-b40d-0dcedef0aaa9",
+			"name": "the pesca",
+			"description": "San Benedetto",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "ad22882f-b877-47c1-aba5-a68da4a9fce6",
+			"name": "The verde al gelsomino",
+			"description": "Rocchetta",
+			"shopName": "A&O",
+			"zoneName": "bibite"
+		},
+		{
+			"id": "3a22cadb-d8da-4660-92a7-c5436726e3c3",
+			"name": "tonno",
+			"description": "rio mare naturale",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "cc9a2cc2-06bc-4605-8f3a-3b4f601d7219",
+			"name": "Tortellini",
+			"description": "Alla carne. Selex",
+			"shopName": "A&O",
+			"zoneName": "frigo"
+		},
+		{
+			"id": "d733f3fd-efa3-4bd1-8967-24f84ac7e949",
+			"name": "tortellini",
+			"description": "rana",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "b763750d-0217-43b4-a2ad-eb4851b21dfd",
+			"name": "tovaglioli",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "f9084fcb-d16e-42bf-be68-df686ec33d50",
+			"name": "triangolo",
+			"description": "findus",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "f516f33f-f811-4150-a208-31f0e0da63d7",
+			"name": "trofie",
+			"description": "Barilla",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "b3481269-c8ff-45b1-bc43-02246547f642",
+			"name": "ungherese",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "4e8c3980-c22f-4add-9ef5-ad4adbcfe973",
+			"name": "uova",
+			"description": "",
+			"shopName": "Siciliano",
+			"zoneName": ""
+		},
+		{
+			"id": "6341c945-3dbc-4a28-abb8-0c0fa9a4d889",
+			"name": "uova allevate a terra",
+			"description": "conf 6",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "7cc1fd34-dd88-4c97-99f2-18e906e14016",
+			"name": "uova r",
+			"description": "",
+			"shopName": "Regolin",
+			"zoneName": ""
+		},
+		{
+			"id": "baad77b1-385a-4291-af13-a994cdd3aa28",
+			"name": "uovo cioccolato",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "466df5e2-6702-447e-84a1-b5f097a2819e",
+			"name": "uva",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "3160988f-e675-4256-b1ba-ec3d5dd4310f",
+			"name": "vaschette grandi",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "25408cbd-b8f5-4f30-b072-ee36ab911828",
+			"name": "vaschette piccole",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "5bcce265-38ba-4640-a31b-22c7122ebb81",
+			"name": "ventagli",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "893341a3-15c4-4b0a-b995-e75bae7522b2",
+			"name": "viakal",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "1ac14ba5-68b7-4d6c-b3e6-4c32b00b83a7",
+			"name": "vienna",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "6e410492-85ac-4022-8100-f790003fd2b7",
+			"name": "vino",
+			"description": "",
+			"shopName": "Ferula",
+			"zoneName": ""
+		},
+		{
+			"id": "e61a4fb8-5647-47d0-8be3-16b1da32009f",
+			"name": "vitello tonnato",
+			"description": "",
+			"shopName": "Regolin",
+			"zoneName": ""
+		},
+		{
+			"id": "2a041a03-b116-4cfc-b1e2-04b70ce6b7f5",
+			"name": "WC net",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "a374503d-a081-44ef-b620-fbbd84956575",
+			"name": "wurstel",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "8eb648b1-aac4-4b88-97b3-5cb46b17c405",
+			"name": "yogurt",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "34db9ecd-aaac-4e71-a9cc-051a9a70dfb2",
+			"name": "yogurt cioccolato",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "0ea3b7ac-8096-4bff-bb6a-16efd21c15ca",
+			"name": "yogurt da bere",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "1a705e86-3dec-4846-a19f-5f7fb4fa5be9",
+			"name": "yogurt naturale",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "ef53c61a-3546-481e-8dc4-de4c3fc12206",
+			"name": "yogurt vaniglia",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "92379b04-0dc4-49d7-9f7d-da9b70fee50c",
+			"name": "zafferano",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "d39515e3-f027-4f80-b697-2c524c2f6294",
+			"name": "zoccoletti tenero",
+			"description": "",
+			"shopName": "Bosio",
+			"zoneName": ""
+		},
+		{
+			"id": "a999c181-f379-43e0-82a0-316bb601f4f3",
+			"name": "zucca",
+			"description": "",
+			"shopName": "Ferula",
+			"zoneName": ""
+		},
+		{
+			"id": "dff795af-b22a-44ef-8b08-3eb206d35212",
+			"name": "zucchero",
+			"description": "",
+			"shopName": "A&O",
+			"zoneName": ""
+		},
+		{
+			"id": "59835311-f64b-4c0b-99e9-d8a37f87fe26",
+			"name": "zucchine",
+			"description": "",
+			"shopName": "Ferula",
+			"zoneName": ""
+		}
+	],
+	"shop_items": []
+}
