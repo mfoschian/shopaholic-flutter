@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:shop_aholic/models/product.dart';
 import 'package:shop_aholic/models/shop_item.dart';
-import 'package:shop_aholic/pages/edit_item.dart';
 
 class ShopItemViewer extends StatelessWidget {
   final ShopItem item;
-  ShopItemViewer({super.key, required this.item, this.onRemoved, this.onEdit});
+  const ShopItemViewer({super.key, required this.item, this.onRemoved, this.onEdit});
 
-  Function? onRemoved;
-  Function? onEdit;
+  final Function? onRemoved;
+  final Function? onEdit;
 
   goToEditPageFor(Product it) {
   }
