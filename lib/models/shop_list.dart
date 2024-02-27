@@ -7,6 +7,13 @@ import 'package:shop_aholic/models/shop_item.dart';
 class ShopList {
 
   List<ShopItem> items = [];
+  List<ShopItem> get todoItems {
+    return items.where( (i) => i.done == false ).toList();
+  }
+
+  List<ShopItem> get doneItems {
+    return items.where( (i) => i.done == true ).toList();
+  }
 
   Future<void> add(Product p, [int qty=1]) async {
     ShopItem? x = items.where((element) => element.product.id == p.id).firstOrNull;
