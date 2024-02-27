@@ -14,17 +14,17 @@ void main() async {
   await App.db.connect();
   
   runApp(MaterialApp(
-    // debugShowCheckedModeBanner: false,
+    debugShowCheckedModeBanner: false,
     title: 'ShopAholic',
     theme: ThemeData(
       colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
       useMaterial3: true,
     ),
-    home: const MyHomePage(title: 'Home'), // becomes the route named '/'
-    routes: <String, WidgetBuilder>{
-      '/a': (BuildContext context) => const MyHomePage(title: 'page A'),
-      '/b': (BuildContext context) => const MyHomePage(title: 'page B'),
-      '/c': (BuildContext context) => const MyHomePage(title: 'page C'),
-    },
+    home: const MyHomePage(title: 'ShopAHolic - Elenco Spesa'), // becomes the route named '/'
+    // routes: <String, WidgetBuilder>{
+    //   '/a': (BuildContext context) => const MyHomePage(title: 'page A'),
+    //   '/b': (BuildContext context) => const MyHomePage(title: 'page B'),
+    //   '/c': (BuildContext context) => const MyHomePage(title: 'page C'),
+    // },
   ));
 }

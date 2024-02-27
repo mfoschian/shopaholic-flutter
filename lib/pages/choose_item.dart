@@ -55,7 +55,8 @@ class _ChooseItemPageState extends State<ChooseItemPage> {
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.done || _loaded) {
             return Column(children: [
-              TextField(controller: _search, autofocus: true, onChanged: (value) => _setFilteredItems(value) ),
+              // const MaxGap(10),
+              _searchBox(),
               Expanded(
                   child: ListView(
                       children: (_filteredItems.isEmpty ? _items : _filteredItems).map((e) => _rowItem(e, context)).toList()
@@ -73,7 +74,7 @@ class _ChooseItemPageState extends State<ChooseItemPage> {
               context,
               MaterialPageRoute(
                   builder: (context) =>
-                      EditItemPage(item: Product(id: App.uuid(), name: ''))));
+                      EditItemPage(item: Product(id: App.uuid(), name: ''), title: 'Nuovo Prodotto')));
           if (p == null) return;
           _addItem(p);
         },
@@ -83,25 +84,48 @@ class _ChooseItemPageState extends State<ChooseItemPage> {
     );
   }
 
-  Row _rowItem(Product e, BuildContext context) {
-    return Row(children: [
-      GestureDetector(
-          child: ProductViewer(item: e),
-          onTap: () {
-            Navigator.pop(context, e);
-          }),
-      ElevatedButton(
-          onPressed: () async {
-            Product? p = await Navigator.push(context,
-                MaterialPageRoute(builder: (context) => EditItemPage(item: e)));
-            if (p != null) {
-              await p.save();
-              e.updateFrom(p);
-              _setFilteredItems(_search.text); // refresh search
-            }
-          },
-          child: const Icon(Icons.edit)
+  Widget _searchBox() {
+    return Padding(
+      padding: const EdgeInsets.all(5),
+      child: TextField(
+        controller: _search,
+        decoration: const InputDecoration(
+          labelText:'Cerca',
+          // icon: Icon(Icons.search),
+          border: OutlineInputBorder()
+        ),
+        autofocus: true,
+        onChanged: (value) => _setFilteredItems(value)
       )
-    ]);
+    );
+  }
+
+  Widget _rowItem(Product e, BuildContext context) {
+    return Padding(padding: const EdgeInsets.all(8),child: 
+      Row(children: [
+        Expanded(child: 
+          GestureDetector(
+              child: ProductViewer(item: e),
+              onTap: () {
+                Navigator.pop(context, e);
+              }),
+        ),
+        GestureDetector(
+            onTap: () async {
+              Product? p = await Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => EditItemPage(item: e, title: 'Modifica Prodotto')));
+              if (p != null) {
+                await p.save();
+                e.updateFrom(p);
+                _setFilteredItems(_search.text); // refresh search
+              }
+            },
+            child: const Padding(
+              padding: EdgeInsets.only(right: 20),
+              child: Icon(Icons.edit)
+            )
+        )
+      ])
+    );
   }
 }

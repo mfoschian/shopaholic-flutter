@@ -25,50 +25,81 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
 
-  ShopList? items;
+  ShopList? list;
+  List<ShopItem> get _safeList {
+    return list == null ? [] : list!.items;
+  }
 
   // void _addItem(Product ki) {
   void _addItem(Product p) async {
-    if (items == null) return;
-    await items!.add(p, 1);
+    if (list == null) return;
+    await list!.add(p, 1);
 
     setState(() {});
   }
 
   void _delItem(ShopItem it) {
-    if (items == null) return;
+    if (list == null) return;
     setState(() {
-      items!.del(it.product, it.qty);
+      list!.del(it.product, it.qty);
     });
   }
 
-  List<Widget> widgets(BuildContext context) {
-    if( items == null ) {
-      return [];
-    }
-    else {
-      return items!.items.map((e) => ShopItemViewer(item: e,
-        onRemoved: () => _delItem(e),
-        onEdit: () async {            // Navigator.of(context).push(route)
-            Product? p = await Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => EditItemPage(item: e.product)
-              )
-            );
-            if(p!=null) {
-              await p.save();
-              e.product.updateFrom(p);
-              setState(() {});
-            }
-          }
-        )
-      ).toList();
+  Future<void> _doEditFor(ShopItem s, {String? title}) async {            // Navigator.of(context).push(route)
+    Product? p = await Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => EditItemPage(item: s.product, title: title ?? 'Modifica Prodotto')
+      )
+    );
+    if(p!=null) {
+      await p.save();
+      s.product.updateFrom(p);
+      setState(() {});
     }
   }
 
+  Widget _item(ShopItem e) {
+    return Row(
+      children: [
+        GestureDetector(
+          child: const Padding(
+            padding: EdgeInsets.only(left: 10),
+            child: Icon(Icons.add_circle)
+          ),
+          onTap:() async {
+            e.qty += 1;
+            await e.save();
+            setState(() {});
+          },
+        ),
+        Expanded( child: ShopItemViewer(
+            item: e,
+            onLongTap: () async { await _doEditFor(e, title: 'Modifica Prodotto'); } 
+          )
+        ),
+        GestureDetector(
+          child: const Padding(
+            padding: EdgeInsets.only(right: 10),
+            child: Icon(Icons.remove_circle)
+          ),
+          onTap:() async {
+            if(e.qty > 1) {
+              e.qty -= 1;
+              await e.save();
+              setState(() {});
+            }
+            else if( e.qty == 1 ) {
+              _delItem(e);
+            }
+          },
+        ),
+      ]
+    );
+  }
+
   Future loadData() async {
-    items = await ShopList.read();
+    list = await ShopList.read();
   }
 
   Future<void> doImport() async {
@@ -82,8 +113,8 @@ class _MyHomePageState extends State<MyHomePage> {
     String json = await file.readAsString();
 
     Map<String, dynamic> o = jsonDecode(json);
-    List<dynamic> items = o["items"];
-    for( dynamic item in items ) {
+    List<dynamic> itms = o["list"];
+    for( dynamic item in itms ) {
       Product p = Product.fromJson(item);
       await p.save();
     }
@@ -101,7 +132,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => DoShoppingPage(list: items!)
+                  builder: (context) => DoShoppingPage(list: list!)
                 )
               )
             },
@@ -119,23 +150,38 @@ class _MyHomePageState extends State<MyHomePage> {
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.done) {
             return Center(
-              child: ListView(
-                children: widgets(context).map( (w) => Slidable(
+              child: ListView.builder(
+                itemCount: _safeList.length,
+                itemBuilder: (context, index) => Slidable(
                   startActionPane: ActionPane(
                     extentRatio: 0.3,
                     motion: const ScrollMotion(),
                     children: [
                       SlidableAction(
-                        onPressed: (context) =>_delItem((w as ShopItemViewer).item),
+                        onPressed: (context) =>_delItem(_safeList[index]),
                         backgroundColor: const Color(0xFFFE4A49),
                         foregroundColor: Colors.white,
                         icon: Icons.delete,
                         label: 'Elimina'
                       )
-                    ]),
-                  child: w,
-                )).toList(),
-              )
+                    ]
+                  ),
+                  endActionPane: ActionPane(
+                    extentRatio: 0.3,
+                    motion: const ScrollMotion(),
+                    children: [
+                      SlidableAction(
+                        onPressed: (context) => _doEditFor(_safeList[index]),
+                        backgroundColor: const Color.fromARGB(255, 17, 210, 49),
+                        foregroundColor: Colors.white,
+                        icon: Icons.edit,
+                        label: 'Modifica'
+                      )
+                    ]
+                  ),
+                  child: _item(_safeList[index]),
+                )
+              ),
             );
           } else {
             return const CircularProgressIndicator();

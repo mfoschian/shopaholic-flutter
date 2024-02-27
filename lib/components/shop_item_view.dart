@@ -1,28 +1,32 @@
 import 'package:flutter/material.dart';
+import 'package:shop_aholic/components/product_viewer.dart';
 import 'package:shop_aholic/models/shop_item.dart';
 
 class ShopItemViewer extends StatelessWidget {
   final ShopItem item;
-  const ShopItemViewer({super.key, required this.item, this.onRemoved, this.onEdit});
+  const ShopItemViewer({super.key, required this.item, this.onLongTap});
 
-  final Function? onRemoved;
-  final Function? onEdit;
+  final Function? onLongTap;
 
-    @override
+  @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(10),
       child: Row(
         children: [
-          Padding(padding: const EdgeInsets.all(10), child: Text(item.qty.toString())),
-          GestureDetector(
-            onLongPress: () { if( onEdit != null ) onEdit!(); },
-            child: Text(item.product.name),
-          ),
-          ElevatedButton(
-            onPressed: () { if( onRemoved != null ) onRemoved!(); },
-            child: const Icon(Icons.remove_shopping_cart)
+          Padding(
+            padding: const EdgeInsets.all(10),
+            child: Text(
+              item.qty.toString(),
+              textScaler: const TextScaler.linear(1.5),
             )
+          ),
+          GestureDetector(
+            onLongPress: () { if( onLongTap != null ) onLongTap!(); },
+            child: Expanded(
+              child: ProductViewer(item: item.product)
+            ),
+          )
         ]
       )
     );
