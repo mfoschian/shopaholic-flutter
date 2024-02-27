@@ -8,7 +8,7 @@ class DoShoppingPage extends StatelessWidget {
   final String title = 'Vai!';
 
   List<Widget> widgets() {
-    return list.items.map((e) => Text('${e.qty} - ${e.item.name}')).toList();
+    return list.items.map((e) => Text('${e.qty} - ${e.product.name}')).toList();
   }
 
   @override

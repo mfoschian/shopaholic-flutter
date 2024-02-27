@@ -1,8 +1,10 @@
 import 'dart:convert';
+import 'dart:ffi';
 import 'dart:io';
 
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:shop_aholic/components/drawer_menu.dart';
 import 'package:shop_aholic/components/shop_item_view.dart';
 import 'package:shop_aholic/models/product.dart';
@@ -37,7 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
   void _delItem(ShopItem it) {
     if (items == null) return;
     setState(() {
-      items!.del(it.item, it.qty);
+      items!.del(it.product, it.qty);
     });
   }
 
@@ -52,12 +54,12 @@ class _MyHomePageState extends State<MyHomePage> {
             Product? p = await Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => EditItemPage(item: e.item)
+                builder: (context) => EditItemPage(item: e.product)
               )
             );
             if(p!=null) {
               await p.save();
-              e.item.updateFrom(p);
+              e.product.updateFrom(p);
               setState(() {});
             }
           }
@@ -119,8 +121,22 @@ class _MyHomePageState extends State<MyHomePage> {
           if (snapshot.connectionState == ConnectionState.done) {
             return Center(
               child: ListView(
-                children: widgets(context)
-              ),
+                children: widgets(context).map( (w) => Slidable(
+                  startActionPane: ActionPane(
+                    extentRatio: 0.3,
+                    motion: const ScrollMotion(),
+                    children: [
+                      SlidableAction(
+                        onPressed: (context) =>_delItem((w as ShopItemViewer).item),
+                        backgroundColor: const Color(0xFFFE4A49),
+                        foregroundColor: Colors.white,
+                        icon: Icons.delete,
+                        label: 'Elimina'
+                      )
+                    ]),
+                  child: w,
+                )).toList(),
+              )
             );
           } else {
             return const CircularProgressIndicator();

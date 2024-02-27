@@ -4,10 +4,10 @@ import "package:shop_aholic/models/product.dart";
 class ShopItem {
   String? sid;
   int qty;
-  Product item;
+  Product product;
   bool done;
 
-  ShopItem({this.sid, required this.item, this.qty = 1, this.done = false });
+  ShopItem({this.sid, required this.product, this.qty = 1, this.done = false });
 
   Future<bool> save() async {
     int affected = 0;
@@ -17,7 +17,7 @@ class ShopItem {
         'sid': sid,
         'qty': qty,
         'status': done ? 1 : 0,
-        'product_id': item.id,
+        'product_id': product.id,
       });
     }
     else {
@@ -61,7 +61,7 @@ class ShopItem {
           sid: sid,
           qty:qty,
           done: status == 1,
-          item: Product(
+          product: Product(
             id: pid,
             name: pname,
             description: pdesc,

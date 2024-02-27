@@ -17,7 +17,7 @@ class ShopItemViewer extends StatelessWidget {
           Padding(padding: const EdgeInsets.all(10), child: Text(item.qty.toString())),
           GestureDetector(
             onLongPress: () { if( onEdit != null ) onEdit!(); },
-            child: Text(item.item.name),
+            child: Text(item.product.name),
           ),
           ElevatedButton(
             onPressed: () { if( onRemoved != null ) onRemoved!(); },

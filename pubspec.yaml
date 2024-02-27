@@ -41,6 +41,7 @@ dependencies:
   uuid: ^4.3.2
   file_picker:
   flutter_typeahead:
+  flutter_slidable:
 
 dev_dependencies:
   flutter_test:

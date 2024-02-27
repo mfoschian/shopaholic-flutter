@@ -9,9 +9,9 @@ class ShopList {
   List<ShopItem> items = [];
 
   Future<void> add(Product p, [int qty=1]) async {
-    ShopItem? x = items.where((element) => element.item.id == p.id).firstOrNull;
+    ShopItem? x = items.where((element) => element.product.id == p.id).firstOrNull;
     if( x == null ) {
-      ShopItem x = ShopItem(item:p, qty:qty, done:false);
+      ShopItem x = ShopItem(product:p, qty:qty, done:false);
       await x.save();
       items.add(x);
     }
@@ -24,7 +24,7 @@ class ShopList {
 
   void del(Product p, [int qty = 1]) async {
     for(int i=0; i<items.length; i++) {
-      if( items[i].item.id == p.id ) {
+      if( items[i].product.id == p.id ) {
         if( items[i].qty > qty ) {
           items[i].qty -= qty;
         }
