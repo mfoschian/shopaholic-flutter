@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shop_aholic/components/product_viewer.dart';
 import 'package:shop_aholic/models/shop_item.dart';
 import 'package:shop_aholic/models/shop_list.dart';
+import 'package:badges/badges.dart' as badges;
 
 class DoShoppingPage extends StatefulWidget {
   const DoShoppingPage({required this.list, super.key});
@@ -13,14 +14,36 @@ class DoShoppingPage extends StatefulWidget {
   State<DoShoppingPage> createState() => _DoShoppingPageState();
 }
 
+class _ShopStats {
+  final String shopName;
+  int products;
+  int done;
+
+  _ShopStats(String name) : shopName = name, products = 0, done = 0;
+}
+
 class _DoShoppingPageState extends State<DoShoppingPage> {
 
   bool _showDone = true;
   static const Color _activeColor =  Color.fromARGB(255, 27, 195, 41);
   static const Color _doneColor =  Color.fromARGB(125, 155, 221, 160);
+  static const String _unknownShop = 'Altro';
 
   List<ShopItem> get _visibleItems {
     return _showDone ? widget.list.items : widget.list.todoItems;
+  }
+
+  List<_ShopStats> get _shops {
+    final Map<String,_ShopStats> stats = {};
+    for( ShopItem itm in widget.list.items) {
+      final String shopName = itm.product.shopName ?? _unknownShop;
+      _ShopStats s = stats.putIfAbsent(shopName, () => _ShopStats(shopName));
+      s.products += 1;
+      if(itm.done) s.done += 1;
+    }
+    List<_ShopStats> ss = stats.values.toList();
+    ss.sort((a,b) => a.shopName.compareTo(b.shopName));
+    return ss;
   }
 
   Widget _item(ShopItem e) {
@@ -53,7 +76,13 @@ class _DoShoppingPageState extends State<DoShoppingPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+
+    final List<_ShopStats> shops = _shops;
+
+    return DefaultTabController(
+      length: shops.length,
+      initialIndex: 0,
+      child: Scaffold(
         appBar: AppBar(
           backgroundColor: Theme.of(context).colorScheme.inversePrimary,
           title: Text(widget.title),
@@ -72,12 +101,33 @@ class _DoShoppingPageState extends State<DoShoppingPage> {
               },
               icon: const Icon(Icons.stop)
             ),
-          ]
+          ],
+          bottom: TabBar(
+            isScrollable: true,
+            tabs: shops.map((s) => 
+              badges.Badge(
+                // position: badges.BadgePosition.topEnd(top: -20, end: -12),
+                badgeContent: Text('${s.done}/${s.products}'),
+                badgeAnimation: const badges.BadgeAnimation.rotation(),
+                badgeStyle: badges.BadgeStyle(badgeColor: s.done == s.products ? Colors.green : Colors.orange ),
+                child: Padding(
+                  padding: const EdgeInsets.all(10),
+                  child: Text(s.shopName, textScaler: const TextScaler.linear(1.5))
+                )
+              )
+            ).toList()
+          )
         ),
-        body: ListView.builder(
-          itemCount: _visibleItems.length,
-          itemBuilder: (context, index) => _item(_visibleItems[index]),
-        ));
-    // return const Placeholder();
+        body: TabBarView(
+          children: shops.map( (s) {
+            List<ShopItem> shopItems = _visibleItems.where( (e) => (e.product.shopName ?? _unknownShop) == s.shopName ).toList();
+            return ListView.builder(
+              itemCount: shopItems.length,
+              itemBuilder: (context, index) => _item(shopItems[index]),
+            );
+          }).toList()
+        )
+      )
+    );
   }
 }

@@ -43,6 +43,7 @@ dependencies:
   flutter_typeahead:
   flutter_slidable:
   gap: ^3.0.1
+  badges: ^3.1.2
 
 dev_dependencies:
   flutter_test:

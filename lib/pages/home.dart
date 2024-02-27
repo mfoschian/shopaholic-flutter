@@ -26,6 +26,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
 
   ShopList? list;
+  bool _needReload = true;
   List<ShopItem> get _safeList {
     return list == null ? [] : list!.items;
   }
@@ -65,7 +66,7 @@ class _MyHomePageState extends State<MyHomePage> {
         GestureDetector(
           child: const Padding(
             padding: EdgeInsets.only(left: 10),
-            child: Icon(Icons.add_circle)
+            child: Icon(Icons.add_circle, color: Colors.greenAccent)
           ),
           onTap:() async {
             e.qty += 1;
@@ -81,7 +82,7 @@ class _MyHomePageState extends State<MyHomePage> {
         GestureDetector(
           child: const Padding(
             padding: EdgeInsets.only(right: 10),
-            child: Icon(Icons.remove_circle)
+            child: Icon(Icons.remove_circle, color: Colors.redAccent)
           ),
           onTap:() async {
             if(e.qty > 1) {
@@ -100,6 +101,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Future loadData() async {
     list = await ShopList.read();
+    _needReload = false;
   }
 
   Future<void> doImport() async {
@@ -118,6 +120,9 @@ class _MyHomePageState extends State<MyHomePage> {
       Product p = Product.fromJson(item);
       await p.save();
     }
+    setState(() {
+      _needReload = true;
+    });
   }
 
   @override
@@ -145,49 +150,16 @@ class _MyHomePageState extends State<MyHomePage> {
           await doImport();
         },
       ),
-      body: FutureBuilder(
+      body: _needReload ? FutureBuilder(
         future: loadData(),
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.done) {
-            return Center(
-              child: ListView.builder(
-                itemCount: _safeList.length,
-                itemBuilder: (context, index) => Slidable(
-                  startActionPane: ActionPane(
-                    extentRatio: 0.3,
-                    motion: const ScrollMotion(),
-                    children: [
-                      SlidableAction(
-                        onPressed: (context) =>_delItem(_safeList[index]),
-                        backgroundColor: const Color(0xFFFE4A49),
-                        foregroundColor: Colors.white,
-                        icon: Icons.delete,
-                        label: 'Elimina'
-                      )
-                    ]
-                  ),
-                  endActionPane: ActionPane(
-                    extentRatio: 0.3,
-                    motion: const ScrollMotion(),
-                    children: [
-                      SlidableAction(
-                        onPressed: (context) => _doEditFor(_safeList[index]),
-                        backgroundColor: const Color.fromARGB(255, 17, 210, 49),
-                        foregroundColor: Colors.white,
-                        icon: Icons.edit,
-                        label: 'Modifica'
-                      )
-                    ]
-                  ),
-                  child: _item(_safeList[index]),
-                )
-              ),
-            );
+            return _body();
           } else {
             return const CircularProgressIndicator();
           }
         },
-      ),
+      ) : _body(),
       floatingActionButton: FloatingActionButton(
         onPressed: () async {
           Product? p = await Navigator.push(
@@ -203,6 +175,43 @@ class _MyHomePageState extends State<MyHomePage> {
         tooltip: 'Metti in lista',
         child: const Icon(Icons.add_shopping_cart_rounded),
       ), // This trailing comma makes auto-formatting nicer for build methods.
+    );
+  }
+
+  Widget _body() {
+    return Center(
+      child: ListView.builder(
+        itemCount: _safeList.length,
+        itemBuilder: (context, index) => Slidable(
+          startActionPane: ActionPane(
+            extentRatio: 0.3,
+            motion: const ScrollMotion(),
+            children: [
+              SlidableAction(
+                onPressed: (context) =>_delItem(_safeList[index]),
+                backgroundColor: const Color(0xFFFE4A49),
+                foregroundColor: Colors.white,
+                icon: Icons.delete,
+                label: 'Elimina'
+              )
+            ]
+          ),
+          endActionPane: ActionPane(
+            extentRatio: 0.3,
+            motion: const ScrollMotion(),
+            children: [
+              SlidableAction(
+                onPressed: (context) => _doEditFor(_safeList[index]),
+                backgroundColor: const Color.fromARGB(255, 17, 210, 49),
+                foregroundColor: Colors.white,
+                icon: Icons.edit,
+                label: 'Modifica'
+              )
+            ]
+          ),
+          child: _item(_safeList[index]),
+        )
+      ),
     );
   }
 }
