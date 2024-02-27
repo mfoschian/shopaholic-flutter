@@ -58,19 +58,19 @@ class _DoShoppingPageState extends State<DoShoppingPage> {
           backgroundColor: Theme.of(context).colorScheme.inversePrimary,
           title: Text(widget.title),
           actions: [
-            ElevatedButton(
+            IconButton(
               onPressed: () {
                 setState(() {
                   _showDone = !_showDone;
                 });
               },
-              child: Icon(_showDone ? Icons.visibility : Icons.visibility_off)
+              icon: Icon(_showDone ? Icons.visibility : Icons.visibility_off)
             ),
-            ElevatedButton(
+            IconButton(
               onPressed: () {
                 Navigator.pop(context);
               },
-              child: const Icon(Icons.stop)
+              icon: const Icon(Icons.stop)
             ),
           ]
         ),

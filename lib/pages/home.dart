@@ -127,7 +127,7 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
         actions: [
-          ElevatedButton(
+          IconButton(
             onPressed: () => {
               Navigator.push(
                 context,
@@ -136,7 +136,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 )
               )
             },
-            child: const Icon(Icons.play_arrow)
+            icon: const Icon(Icons.play_arrow)
           )
         ],
       ),

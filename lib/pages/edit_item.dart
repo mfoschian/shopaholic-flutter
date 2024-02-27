@@ -39,12 +39,12 @@ class _EditItemPageState extends State<EditItemPage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title ?? 'Modifica'),
         actions: [
-          ElevatedButton(onPressed: () {
+          IconButton(onPressed: () {
             _formKey.currentState?.save(); // Trigger onSave on form fields
             _product!.shopName = _controller.text;
             Navigator.pop(context, _product);
           },
-          child: const Icon(Icons.save)
+          icon: const Icon(Icons.save)
           )
         ],
       ),
