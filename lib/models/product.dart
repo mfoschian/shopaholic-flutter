@@ -39,7 +39,8 @@ class Product {
       affected = await App.db.update('products', values, where: 'id=?', whereArgs: [id]);
       if( affected == 0 ) {
         // unkown id: insert !
-        affected = await App.db.insert('products', values);
+        await App.db.insert('products', values); // return new id
+        affected = 1;
       }
     }
     return affected == 1;

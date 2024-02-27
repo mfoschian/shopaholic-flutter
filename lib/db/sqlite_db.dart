@@ -66,7 +66,7 @@ class SqliteDB {
   }
 
   Future<int> update(String table, Map<String,Object?> values, {String? where, List<Object?>? whereArgs}) {
-    // returns: new id
+    // returns: affected records
     //const ConflictAlgorithm ca = ConflictAlgorithm.rollback;
     if( _db == null ) {
       return Future.value(0);
