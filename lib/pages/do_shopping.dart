@@ -42,6 +42,11 @@ class _DoShoppingPageState extends State<DoShoppingPage> {
       if(itm.done) s.done += 1;
     }
     List<_ShopStats> ss = stats.values.toList();
+    // La sparizione delle tab causa problemi di setState e dispose()
+    // Per il momento faccio vedere anche quelle completate
+    // if(!_showDone) {
+    //   ss = ss.where( (s) => s.done < s.products ).toList();
+    // }
     ss.sort((a,b) => a.shopName.compareTo(b.shopName));
     return ss;
   }
@@ -108,7 +113,7 @@ class _DoShoppingPageState extends State<DoShoppingPage> {
               badges.Badge(
                 // position: badges.BadgePosition.topEnd(top: -20, end: -12),
                 badgeContent: Text('${s.done}/${s.products}'),
-                badgeAnimation: const badges.BadgeAnimation.rotation(),
+                badgeAnimation: const badges.BadgeAnimation.scale(animationDuration: Duration(milliseconds: 200)),
                 badgeStyle: badges.BadgeStyle(badgeColor: s.done == s.products ? Colors.green : Colors.orange ),
                 child: Padding(
                   padding: const EdgeInsets.all(10),

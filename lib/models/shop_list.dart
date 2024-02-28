@@ -31,7 +31,7 @@ class ShopList {
     }
   }
 
-  void del(Product p, [int qty = 1]) async {
+  Future<void> del(Product p, [int qty = 1]) async {
     for(int i=0; i<items.length; i++) {
       if( items[i].product.id == p.id ) {
         if( items[i].qty > qty ) {

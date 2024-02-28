@@ -32,18 +32,19 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   // void _addItem(Product ki) {
-  void _addItem(Product p) async {
+  Future<void> _addItem(Product p) async {
     if (list == null) return;
     await list!.add(p, 1);
 
     setState(() {});
   }
 
-  void _delItem(ShopItem it) {
-    if (list == null) return;
-    setState(() {
-      list!.del(it.product, it.qty);
-    });
+  Future<void> _delItem(ShopItem it) async {
+    if (list != null) {
+      await list!.del(it.product, it.qty);
+
+      setState(() {});
+    }
   }
 
   Future<void> _doEditFor(ShopItem s, {String? title}) async {            // Navigator.of(context).push(route)
@@ -91,7 +92,7 @@ class _MyHomePageState extends State<MyHomePage> {
               setState(() {});
             }
             else if( e.qty == 1 ) {
-              _delItem(e);
+              await _delItem(e);
             }
           },
         ),
@@ -115,7 +116,7 @@ class _MyHomePageState extends State<MyHomePage> {
     String json = await file.readAsString();
 
     Map<String, dynamic> o = jsonDecode(json);
-    List<dynamic> itms = o["list"];
+    List<dynamic> itms = o["items"];
     for( dynamic item in itms ) {
       Product p = Product.fromJson(item);
       await p.save();
@@ -147,7 +148,12 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       drawer: MyDrawerMenu(
         onImport: () async {
-          await doImport();
+          try {
+            await doImport();
+          }
+          catch( err ) {
+            print(err);
+          }
         },
         onNewShopping: () async {
           if(list == null || list!.items.isEmpty) return;
@@ -185,7 +191,7 @@ class _MyHomePageState extends State<MyHomePage> {
             )
           );
           if(p != null) {
-            _addItem(p);
+            await _addItem(p);
           }
         },
         tooltip: 'Metti in lista',
@@ -204,7 +210,7 @@ class _MyHomePageState extends State<MyHomePage> {
             motion: const ScrollMotion(),
             children: [
               SlidableAction(
-                onPressed: (context) =>_delItem(_safeList[index]),
+                onPressed: (context) async { await _delItem(_safeList[index]); },
                 backgroundColor: const Color(0xFFFE4A49),
                 foregroundColor: Colors.white,
                 icon: Icons.delete,
