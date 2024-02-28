@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:file_picker/file_picker.dart';
+import 'package:confirm_dialog/confirm_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:shop_aholic/components/drawer_menu.dart';
@@ -12,7 +13,6 @@ import 'package:shop_aholic/models/shop_list.dart';
 import 'package:shop_aholic/pages/choose_item.dart';
 import 'package:shop_aholic/pages/do_shopping.dart';
 import 'package:shop_aholic/pages/edit_item.dart';
-
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
@@ -150,9 +150,20 @@ class _MyHomePageState extends State<MyHomePage> {
           await doImport();
         },
         onNewShopping: () async {
-          if(list == null) return;
-          await list!.clear();
-          setState(() { _needReload = true; });
+          if(list == null || list!.items.isEmpty) return;
+
+          bool ok = await confirm(
+            context,
+            title: const Text('Attenzione !'),
+            content: const Text('Iniziare una nuova spesa cancella la vecchia !'),
+            textOK: const Text('OK, cancella'),
+            textCancel: const Text('NO, non cancellare'),
+          );
+          
+          if(ok == true) {
+            await list!.clear();
+            setState(() { _needReload = true; });
+          }
         },
       ),
       body: _needReload ? FutureBuilder(

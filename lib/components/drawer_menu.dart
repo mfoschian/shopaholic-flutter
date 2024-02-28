@@ -33,11 +33,16 @@ class MyDrawerMenu extends StatelessWidget {
             title: const Text('Nuova Spesa'),
             onTap: () {
               if(onNewShopping != null ) {
-                onNewShopping!();
+                onNewShopping!().then( (ok) {
+                  Navigator.pop(context);
+                });
               }
-              Navigator.pop(context);
+              else {
+                Navigator.pop(context);
+              }
             },
           ),
+          const Divider(),
           ListTile(
             leading: const Icon(Icons.upload),
             title: const Text('Importa'),
