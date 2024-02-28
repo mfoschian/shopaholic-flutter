@@ -1,11 +1,9 @@
-import 'dart:convert';
-import 'dart:io';
-
-import 'package:file_picker/file_picker.dart';
 import 'package:confirm_dialog/confirm_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
+import 'package:shop_aholic/app.dart';
 import 'package:shop_aholic/components/drawer_menu.dart';
+import 'package:shop_aholic/components/progress_dialog.dart';
 import 'package:shop_aholic/components/shop_item_view.dart';
 import 'package:shop_aholic/models/product.dart';
 import 'package:shop_aholic/models/shop_item.dart';
@@ -106,24 +104,15 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   Future<void> doImport() async {
-    FilePickerResult? res = await FilePicker.platform.pickFiles();
-    if(res == null) {
-      return;
-    }
+    ProgressDialog<void> modal = ProgressDialog<void>(title: 'Import', message: 'Import dati in corso');
+    await modal.open(context, App.importProducts);
 
-    String filePath = res.files.single.path!;
-    File file = File(filePath);
-    String json = await file.readAsString();
+  }
 
-    Map<String, dynamic> o = jsonDecode(json);
-    List<dynamic> itms = o["items"];
-    for( dynamic item in itms ) {
-      Product p = Product.fromJson(item);
-      await p.save();
-    }
-    setState(() {
-      _needReload = true;
-    });
+  Future<String?> doExport() async {
+    ProgressDialog<String?> modal = ProgressDialog<String?>(title: 'Export', message: 'Export dati in corso');
+    String? path = await modal.open(context, App.exportProducts);
+    return path;
   }
 
   @override
@@ -148,12 +137,21 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       drawer: MyDrawerMenu(
         onImport: () async {
-          try {
-            await doImport();
-          }
-          catch( err ) {
-            print(err);
-          }
+          await doImport();
+          setState(() {
+            _needReload = true;
+          });
+        },
+        onExport: () {
+          doExport().then( (path) {
+            if(path != null) {
+              SnackBar snackBar = SnackBar( content: Text('Export in $path'));
+
+              // Find the ScaffoldMessenger in the widget tree
+              // and use it to show a SnackBar.
+              ScaffoldMessenger.of(context).showSnackBar(snackBar);
+            }
+          });
         },
         onNewShopping: () async {
           if(list == null || list!.items.isEmpty) return;

@@ -14,6 +14,15 @@ class Product {
     shopName = json['shopName'] as String?
   ;
 
+  Map<String,dynamic> toJson() {
+    return {
+      'id': id,
+      'name': name,
+      'description': description,
+      'shopName': shopName
+    };
+  }
+
   Product dup() {
     return Product(id: id, name: name, description: description, shopName: shopName );
   }

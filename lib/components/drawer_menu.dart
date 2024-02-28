@@ -47,20 +47,20 @@ class MyDrawerMenu extends StatelessWidget {
             leading: const Icon(Icons.upload),
             title: const Text('Importa'),
             onTap: () {
+              Navigator.pop(context);
               if(onImport != null ) {
                 onImport!();
               }
-              Navigator.pop(context);
             },
           ),
           ListTile(
             leading: const Icon(Icons.download),
             title: const Text('Esporta'),
             onTap: () {
+              Navigator.pop(context);
               if(onExport != null ) {
                 onExport!();
               }
-              Navigator.pop(context);
             },
           ),
           ListTile(

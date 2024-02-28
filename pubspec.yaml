@@ -45,6 +45,7 @@ dependencies:
   gap: ^3.0.1
   badges: ^3.1.2
   confirm_dialog: ^1.0.3
+  path_provider:
 
 dev_dependencies:
   flutter_test:
