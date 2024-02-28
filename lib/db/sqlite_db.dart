@@ -3,6 +3,12 @@ import 'dart:async';
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 
+
+// import 'package:sqflite_common_ffi/sqflite_ffi.dart'; // TODO: Comment on Android
+void _initForLinux() {
+  // databaseFactory = databaseFactoryFfi;  // TODO: Comment on Android
+}
+
 class SqliteDB {
 
   Database? _db;
@@ -36,6 +42,7 @@ class SqliteDB {
 
   Future<bool> connect() async {
 
+    _initForLinux();
     await close();
 
     String fullDbPath = join(await getDatabasesPath(),name);

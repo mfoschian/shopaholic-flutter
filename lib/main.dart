@@ -1,16 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:shop_aholic/app.dart';
 import 'package:shop_aholic/pages/home.dart';
-import 'package:sqflite_common_ffi/sqflite_ffi.dart';
-
-// void main() {
-//   runApp(const MyApp());
-// }
 
 void main() async {
 
   WidgetsFlutterBinding.ensureInitialized();
-  databaseFactory = databaseFactoryFfi;
   await App.db.connect();
   
   runApp(MaterialApp(

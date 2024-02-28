@@ -123,6 +123,19 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
         actions: [
           IconButton(
+            onPressed: () {
+              App.shareList().then( (ok) {
+                final String message = ok ? 'Spesa condivisa!' : 'Ops! Qualcosa è andato storto';
+                SnackBar snackBar = SnackBar( content: Text(message));
+
+                // Find the ScaffoldMessenger in the widget tree
+                // and use it to show a SnackBar.
+                ScaffoldMessenger.of(context).showSnackBar(snackBar);              
+              });
+            },
+            icon: const Icon(Icons.share)
+          ),
+          IconButton(
             onPressed: () => {
               Navigator.push(
                 context,
@@ -137,10 +150,12 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       drawer: MyDrawerMenu(
         onImport: () async {
-          await doImport();
-          setState(() {
-            _needReload = true;
-          });
+          doImport()
+            .then( (res) => setState(() {_needReload = true;}) )
+            .onError((error, stackTrace) {
+              SnackBar snackBar = SnackBar( content: Text('Errore!\n${error.toString()}'));
+              ScaffoldMessenger.of(context).showSnackBar(snackBar);
+            });
         },
         onExport: () {
           doExport().then( (path) {
