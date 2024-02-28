@@ -21,9 +21,9 @@ class ShopItemViewer extends StatelessWidget {
               textScaler: const TextScaler.linear(1.5),
             )
           ),
-          GestureDetector(
-            onLongPress: () { if( onLongTap != null ) onLongTap!(); },
-            child: Expanded(
+          Expanded(
+            child: GestureDetector(
+              onLongPress: () { if( onLongTap != null ) onLongTap!(); },
               child: ProductViewer(item: item.product)
             ),
           )
