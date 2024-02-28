@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 
 class MyDrawerMenu extends StatelessWidget {
-  const MyDrawerMenu({super.key, this.onImport, this.onExport });
+  const MyDrawerMenu({super.key, this.onImport, this.onExport, this.onNewShopping });
 
   final Function? onImport;
   final Function? onExport;
+  final Function? onNewShopping;
 
   @override
   Widget build(BuildContext context) {
@@ -26,6 +27,16 @@ class MyDrawerMenu extends StatelessWidget {
               )
             ),
             onTap: () { Navigator.pop(context); }
+          ),
+          ListTile(
+            leading: const Icon(Icons.new_releases),
+            title: const Text('Nuova Spesa'),
+            onTap: () {
+              if(onNewShopping != null ) {
+                onNewShopping!();
+              }
+              Navigator.pop(context);
+            },
           ),
           ListTile(
             leading: const Icon(Icons.upload),

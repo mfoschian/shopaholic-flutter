@@ -149,6 +149,11 @@ class _MyHomePageState extends State<MyHomePage> {
         onImport: () async {
           await doImport();
         },
+        onNewShopping: () async {
+          if(list == null) return;
+          await list!.clear();
+          setState(() { _needReload = true; });
+        },
       ),
       body: _needReload ? FutureBuilder(
         future: loadData(),

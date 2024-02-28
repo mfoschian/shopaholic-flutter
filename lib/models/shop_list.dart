@@ -6,6 +6,8 @@ import 'package:shop_aholic/models/shop_item.dart';
 
 class ShopList {
 
+  ShopList(List<ShopItem> l) : items = l;
+
   List<ShopItem> items = [];
   List<ShopItem> get todoItems {
     return items.where( (i) => i.done == false ).toList();
@@ -44,7 +46,12 @@ class ShopList {
     }
   }
 
-  ShopList(List<ShopItem> l) : items = l;
+  Future<void> clear() async {
+    for( ShopItem itm in items) {
+      await itm.del();
+    }
+    items.clear();
+  }
 
   static Future<ShopList> read() async {
     return ShopList(await ShopItem.readItems());
