@@ -3,6 +3,7 @@ import 'dart:convert';
 
 import 'package:shop_aholic/db/database.dart';
 import 'package:shop_aholic/models/product.dart';
+import 'package:shop_aholic/models/shop_item.dart';
 import 'package:uuid/uuid.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:path_provider/path_provider.dart';
@@ -83,4 +84,29 @@ class App {
       return false;
     }
   }
+
+  static Future<void> loadShopList(String? filePath) async {
+    if( filePath == null) return;
+
+    File file = File(filePath);
+    String json = await file.readAsString();
+
+    Map<String, dynamic> o = jsonDecode(json);
+
+    // Import items
+    List<dynamic> itms = o["items"];
+    for( dynamic item in itms ) {
+      Product p = Product.fromJson(item);
+      await p.save();
+    }
+
+    // Import ShopItems
+    List<dynamic> shitms = o["shop_items"];
+    for( dynamic item in shitms ) {
+      await ShopItem.saveFromJson(item);
+    }
+    
+  }
+
+
 }

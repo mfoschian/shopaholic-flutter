@@ -47,6 +47,7 @@ dependencies:
   confirm_dialog: ^1.0.3
   path_provider:
   share_plus: ^7.2.2
+  receive_sharing_intent:
 
 dev_dependencies:
   flutter_test:

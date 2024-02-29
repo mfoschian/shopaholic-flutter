@@ -9,6 +9,17 @@ class ShopItem {
 
   ShopItem({this.sid, required this.product, this.qty = 1, this.done = false });
 
+  static Future<bool> saveFromJson(Map<String,dynamic> json) async {
+    await App.db.insert('shopitems', {
+      'sid': json["sid"],
+      'qty': json["qty"],
+      'status': json["status"],
+      'product_id': json["item_id"]
+    });
+
+    return true;
+  }
+
   Future<bool> save() async {
     int affected = 0;
     if( sid == null) {

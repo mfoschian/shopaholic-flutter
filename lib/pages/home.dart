@@ -1,6 +1,9 @@
+
+
 import 'package:confirm_dialog/confirm_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
+
 import 'package:shop_aholic/app.dart';
 import 'package:shop_aholic/components/drawer_menu.dart';
 import 'package:shop_aholic/components/progress_dialog.dart';
@@ -11,6 +14,7 @@ import 'package:shop_aholic/models/shop_list.dart';
 import 'package:shop_aholic/pages/choose_item.dart';
 import 'package:shop_aholic/pages/do_shopping.dart';
 import 'package:shop_aholic/pages/edit_item.dart';
+import 'package:shop_aholic/shoplist_listener.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
@@ -29,6 +33,24 @@ class _MyHomePageState extends State<MyHomePage> {
     return list == null ? [] : list!.items;
   }
 
+  // Intent Management {
+  final ShopListListener _listener = ShopListListener();
+
+  @override
+  void initState() {
+    super.initState();
+
+    // Listen to media sharing coming from outside the app while the app is in the memory.
+    _listener.start(onLoaded: () => setState(() { _needReload = true; } ));
+  }
+
+  @override
+  void dispose() {
+    _listener.stop();
+    super.dispose();
+  }
+  // } Intent Management
+
   // void _addItem(Product ki) {
   Future<void> _addItem(Product p) async {
     if (list == null) return;
@@ -45,7 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
     }
   }
 
-  Future<void> _doEditFor(ShopItem s, {String? title}) async {            // Navigator.of(context).push(route)
+  Future<void> _doEditFor(ShopItem s, {String? title}) async {
     Product? p = await Navigator.push(
       context,
       MaterialPageRoute(
