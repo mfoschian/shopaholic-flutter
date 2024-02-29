@@ -53,6 +53,7 @@ class _DoShoppingPageState extends State<DoShoppingPage> {
 
   Widget _item(ShopItem e) {
     return GestureDetector( 
+      behavior: HitTestBehavior.opaque,
       onTap: () async {
         e.done = !e.done;
         await e.save();

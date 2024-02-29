@@ -105,6 +105,7 @@ class _ChooseItemPageState extends State<ChooseItemPage> {
       Row(children: [
         Expanded(child: 
           GestureDetector(
+              behavior: HitTestBehavior.opaque,
               child: ProductViewer(item: e),
               onTap: () {
                 Navigator.pop(context, e);

@@ -23,6 +23,7 @@ class ShopItemViewer extends StatelessWidget {
           ),
           Expanded(
             child: GestureDetector(
+              behavior: HitTestBehavior.opaque,
               onLongPress: () { if( onLongTap != null ) onLongTap!(); },
               child: ProductViewer(item: item.product)
             ),
