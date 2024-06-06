@@ -1,40 +1,63 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="it.mfx.shopaholic">
 
-	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- <uses-permission android:name="android.permission.CAMERA" /> -->
+
 
     <application
-        android:label="shop_aholic"
-        android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
-        <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:launchMode="singleTop"
-            android:theme="@style/LaunchTheme"
-            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-            android:hardwareAccelerated="true"
-            android:windowSoftInputMode="adjustResize">
-            <!-- Specifies an Android theme to apply to this Activity as soon as
-                 the Android process has started. This theme is visible to the user
-                 while the Flutter UI initializes. After that, this theme continues
-                 to determine the Window background behind the Flutter UI. -->
-            <meta-data
-              android:name="io.flutter.embedding.android.NormalTheme"
-              android:resource="@style/NormalTheme"
-              />
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
+        android:name=".ShopApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
 
-			<!-- json file and share managements START -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="it.mfx.shopaholic.fileprovider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+
+
+        <activity
+            android:name=".ui.activities.ComposeListActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="@string/share_mime_type" />
+                <!--
+                <data android:mimeType="application/json" />
+                <data android:mimeType="text/html" />
+                -->
+            </intent-filter>
+            <!--
+                You should have both a rule with the mimeType and one without if you want to be complete. See
+                https://developer.android.com/guide/components/intents-filters.html#DataTest
+                 – Andrew Sun Dec 16 '16 at 3:33
+            -->
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
                 <data android:scheme="content" android:host="*" />
 
-                <data android:mimeType="application/json" />
+                <data android:mimeType="@string/share_mime_type" />
                 <data android:mimeType="application/octet-stream" />
                 <data android:mimeType="text/html" />
                 <data android:mimeType="*/*" />
@@ -59,7 +82,9 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <data android:scheme="content" android:host="*" />
 
-                <data android:mimeType="application/json" />
+                <data android:scheme="content" android:host="*" />
+
+                <data android:mimeType="@string/share_mime_type" />
                 <data android:mimeType="application/octet-stream" />
                 <data android:mimeType="text/html" />
                 <data android:mimeType="*/*" />
@@ -80,7 +105,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <data android:scheme="http"
                     android:host="*"
-                    android:mimeType="application/json" />
+                    android:mimeType="@string/share_mime_type" />
                 <data android:mimeType="application/octet-stream" />
             </intent-filter>
             <intent-filter>
@@ -91,23 +116,18 @@
                     android:host="*"
                     android:pathPattern=".*\\.json" />
             </intent-filter>
-			<!-- json file and share managements END -->
         </activity>
-        <!-- Don't delete the meta-data below.
-             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
-        <meta-data
-            android:name="flutterEmbedding"
-            android:value="2" />
+        <activity
+            android:name=".ui.activities.SearchItemActivity"
+            android:label="@string/title_activity_search_item"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ui.activities.EditItemActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+        />
+        <activity
+            android:name=".ui.activities.ShopRunActivity"
+            android:label="@string/title_activity_shop_run"
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
-    <!-- Required to query activities that can process text, see:
-         https://developer.android.com/training/package-visibility?hl=en and
-         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
 
-         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin. -->
-    <queries>
-        <intent>
-            <action android:name="android.intent.action.PROCESS_TEXT"/>
-            <data android:mimeType="text/plain"/>
-        </intent>
-    </queries>
 </manifest>
