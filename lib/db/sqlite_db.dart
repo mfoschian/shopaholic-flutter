@@ -4,9 +4,9 @@ import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 
 
-// import 'package:sqflite_common_ffi/sqflite_ffi.dart'; // TODO: Comment on Android
+import 'package:sqflite_common_ffi/sqflite_ffi.dart'; // TODO: Comment on Android
 void _initForLinux() {
-  // databaseFactory = databaseFactoryFfi;  // TODO: Comment on Android
+  databaseFactory = databaseFactoryFfi;  // TODO: Comment on Android
 }
 
 class SqliteDB {
