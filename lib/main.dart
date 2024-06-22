@@ -90,7 +90,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Plugin example app'),
+          title: const Text('ShopAHolic'),
         ),
         body: Center(
           child: Column(
