@@ -18,16 +18,16 @@ class ShopListListener {
 
   void start({required Function onLoaded}) {
     try {
-      _intentSub ??= ReceiveSharingIntent.getMediaStream().listen((List<SharedMediaFile> value) async {
+      _intentSub ??= ReceiveSharingIntent.instance.getMediaStream().listen((List<SharedMediaFile> value) async {
         await _loadFrom(value);
         onLoaded();
       });
 
       // Get the media sharing coming from outside the app while the app is closed.
-      ReceiveSharingIntent.getInitialMedia().then((List<SharedMediaFile> value) async {
+      ReceiveSharingIntent.instance.getInitialMedia().then((List<SharedMediaFile> value) async {
         await _loadFrom(value);      
         // Tell the library that we are done processing the intent.
-        ReceiveSharingIntent.reset();
+        ReceiveSharingIntent.instance.reset();
         onLoaded();
       });
     }
