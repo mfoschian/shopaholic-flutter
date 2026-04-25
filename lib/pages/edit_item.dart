@@ -82,14 +82,20 @@ class _EditItemPageState extends State<EditItemPage> {
                   );
                 },
                 suggestionsCallback: (String search) {
-                  if (search == '' || _shopNames == null) {
+                  if(_shopNames == null) {
+                    return const [];
+                  }
+                  else if(search == '') {
+                    if(_shopNames!.length < 5) {
+                      return _shopNames!.where((String s) => s.isNotEmpty).toList();
+                    }
                     return const [];
                   }
                   List<String> res = _shopNames!.where((String option) {
-                    return option.toLowerCase().contains(search.toLowerCase());
+                  return option.toLowerCase().contains(search.toLowerCase());
                   }).toList();
                   if(res.isEmpty && _shopNames!.length < 5) {
-                    return _shopNames!.where((String s) => s.isNotEmpty).toList();
+                  return _shopNames!.where((String s) => s.isNotEmpty).toList();
                   }
                   return res;
                 },
